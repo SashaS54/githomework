@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(211, 210, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+.photo1 {
+    height: 300px;
+    width: 225pxpx;
+    border: 5px solid black;
+}
+.photo2 {
+    height: 25px;
+    width: 35px;
+    margin-left: 1875px;
+   
+}
+div {
+    display: inline-block;
+
+}
+.abboutme {
+    display: block;
+}
+.photo3 {
+    height: 12px;
+    width: 12px;
+}
+.photo4 {
+    height: 12px;
+    width: 12px;
+}
