@@ -9,7 +9,42 @@ body {
     font-size: 14px;
 }
 
-.form1 {
+.form1_point  {
     display: inline-block;
     width: 300px;
+    padding: 10px;
+}
+.first_form {
+    padding: 15px;
+    margin: 10px;
+}
+.second_form {
+    padding: 15px;
+    margin: 10px;
+
+}
+.form2_point {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+}
+.form3_point {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+}
+.third_form {
+    padding: 15px;
+    margin: 10px;
+
+}
+.text_area{
+    height: 100px;
+    width: 300px;
+}
+.select_for1_choise {
+    width: 100px;
+}
+.select_for_many_choises {
+    width: 100px;
 }

@@ -12,24 +12,26 @@
 <body>
     <h1>дополнительоне задание ко второму уроку</h1>
 
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form1">
         <fieldset class="first_form">
             <legend>Общие даные</legend>
 
-            <label class="form1"> Заблокированое поле.</label> <input type="text" name="blocked_text" disabled
+            <label class="form1_point"> Заблокированое поле.</label> <input type="text" name="blocked_text" disabled
                 placeholder="миня низя минять"><br>
-            <label class="form1"> какотйто текст.</label> <input type="text" name="for_reading"
+            <label class="form1_point"> какотйто текст.</label> <input type="text" name="for_reading"
                 placeholder="миня толька читать"><br>
-            <label class="form1"> Имя питомца</label> <input type="text" name="text" placeholder="какойто текст"><br>
-            <label class="form1"> Ваш Email</label> <input type="email" name="email" placeholder="borov@gmail.com"><br>
-            <label class="form1"> Секретный пароль</label> <input type="password" name="password"><br>
-            <label class="form1"> Дата рождения</label> <input type="date" name="date"><br>
-            <label class="form1"> Возвраст дерева </label> <input type="number" name="number"><br>
-            <label class="form1"> Ваш пол</label>
+            <label class="form1_point"> Имя питомца</label> <input type="text" name="text"
+                placeholder="какойто текст"><br>
+            <label class="form1_point"> Ваш Email</label> <input type="email" name="email"
+                placeholder="borov@gmail.com"><br>
+            <label class="form1_point"> Секретный пароль</label> <input type="password" name="password"><br>
+            <label class="form1_point"> Дата рождения</label> <input type="date" name="date"><br>
+            <label class="form1_point"> Возвраст дерева </label> <input type="number" name="number"><br>
+            <label class="form1_point"> Ваш пол</label>
             <label> <input type="radio" name="form1_radio_gender" value="male"> Мужской</label>
             <label> <input type="radio" name="form1_radio_gender" value="female">женский </label>
             <label> <input type="radio" name="form1_radio_gender" value="other">другое </label><br>
-            <label class="form1">Социальные сети</label>
+            <label class="form1_point">Социальные сети</label>
             <label> <input type="checkbox" name="form1_checkbox[]" value="telegram">telegram</label>
             <label> <input type="checkbox" name="form1_checkbox[]" value="vkontakte">vkontakte</label>
             <label> <input type="checkbox" name="form1_checkbox[]" value="instagram">instagram</label>
@@ -38,10 +40,48 @@
             <label> <input type="checkbox" name="form1_checkbox[]" value="xxxxxxxx">xxxxxxxx</label>
         </fieldset>
     </form>
+    <form action="#" method="POST">
+        <fieldset class="second_form">
+            <legend>Другая информация</legend>
+            <label class="form2_point">Любимый цвет</label> <input type="color" name="color"><br>
+            <label class="form2_point">Мобильный номер</label> <input type="tel" name="phone_number"><br>
+            <label class="form2_point">Время следующего занятия </label> <input type="time"
+                name="time_for_next_lesson"><br>
+            <label class="form2_point">Ссылка на любимый сайт</label> <input type="url" name="favourite_site"
+                placeholder="https://google.com"><br>
+            <label class="form2_point">число от 1 до 10</label><input type="range" name="from1_to_10"><br>
+            <label class="form2_point">Загрузи картинку</label><input type="file" name="img"><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset class="third_form">
+            <legend>no inputs</legend>
+            <label class="form3_point"> Любимый напиток</label>
+            <select class="select_for1_choise">
+                <option>milk</option>
+                <option>tea</option>
+                <option>coffe</option>
+                <option>cola</option>
+                <option>cola</option>
+            </select><br>
+            <label class="form3_point"> Любимыйе напитки</label>
+            <select class="select_for_many_choises" multiple>
+                <option>milk</option>
+                <option>tea</option>
+                <option>coffe</option>
+                <option>cola</option>
+                <option>cola</option>
+            </select><br>
+            <label class="form3_point">коментарий на свободную тему</label><textarea class="text_area"
+                placeholder="в это поле помещаться 50 символов в строке и 6 строк" maxlength="50 6"></textarea>
+        </fieldset>
+    </form>
+    <form class="buttons">
+        <fieldset>
+            <legend>кнопочки</legend>
 
-
-
-
+        </fieldset>
+    </form>
 
 
 
