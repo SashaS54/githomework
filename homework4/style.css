@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+ul, ol {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header_top {
+    background-color: darkblue;
+}
+#main_menu {
+    border-left: 2px solid red;
+}
+#main_menu li {
+    display: inline-block;
+    border-right: 2px solid red;
+}
+#main_menu li a {
+    display: inline-block;
+    height: 47px;
+    line-height: 47px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+#main_menu li a:hover {
+    background-color: seagreen;
+}
+/*===promo===*/
+.header_botton {
+    background-color: #000;
+}
+.promo {
+    background-color: url('../images/flower.jpg') right top no-repeat;
+    height: 260px;
+}
+
+
+
+.promo_title {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+
+}
+.promo_subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: blueviolet;
+    letter-spacing: -2px;
+}
