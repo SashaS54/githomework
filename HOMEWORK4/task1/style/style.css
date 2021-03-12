@@ -59,14 +59,14 @@ height: 260px   ;
 color: fff;
 font-size: 42px;
 font-weight: 700;
-color: brown;
+color: #fff;
 }
 .promo_subtitle {
- font-size: 16px;
+ font-size: 15px;
 text-transform: uppercase;
-color: brown;
-letter-spacing: -2px;
-font-weight: 600px;
+color: #bb096b;
+letter-spacing: -1px;
+font-weight: 600;
 }
 .promo_title_border {
     padding-top: 96px;
@@ -76,15 +76,26 @@ main {
     
 }
 
-
-
+main a {
+text-decoration: none;
+color:#bb096b ;
+}
+main a:hover {
+color: #770444;
+}
 
 .content {
     width: 45%;
     float: left;
-   
 
 }
+.content a{
+text-decoration: none;
+color: #bb096b;
+
+}
+
+
 .col1, .col2 {
     width: 27.5%;
     float: left;
@@ -171,9 +182,8 @@ padding: 0 0 10px 7px;
 list-style-position: inside ;
 }
 .col2 li a {
-text-decoration: none;
 font-weight: 700;
-color: #bc096f;
+
 }
 
 
@@ -220,11 +230,10 @@ line-height: 1.77;
     padding: 32px 0 34px 0;
 }
 .content_1col_text ul li a {
-text-decoration: none;
+
 display: inline-block;
 padding: 0 3px;
-color: #b40f6d;
-font-weight: 800;
+
 }
 .content_1col_text li {
 display: inline-block;
