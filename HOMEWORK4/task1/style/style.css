@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header_top {
+background: -moz-linear-gradient(90deg, rgba(95,8,46,1) 0%, rgba(188,9,111,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(188,9,111,1)), color-stop(100%, rgba(95,8,46,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, rgba(95,8,46,1) 0%, rgba(188,9,111,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, rgba(95,8,46,1) 0%, rgba(188,9,111,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, rgba(95,8,46,1) 0%, rgba(188,9,111,1) 100%); /* ie10+ */
+background: linear-gradient(0deg, rgba(95,8,46,1) 0%, rgba(188,9,111,1) 100%); /* w3c */
+
+}
+.main_menu {
+ border-left: 2px solid #730440;
+}
+.main_menu li {
+    display: inline-block;
+    border-right: 2px solid #730440;
+}
+.main_menu li a{
+    display: inline-block;
+    height: 47px;
+    line-height: 47px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px;
+    text-transform: uppercase;
+}
+.main_menu li a:hover {
+    background-color: #770444;
+}
+/*===promo===*/
+.header_bottom {
+background-color: #000;
+}
+.promo {
+background: url('../images/flower.jpg') right top no-repeat;
+height: 260px   ;
+}
+
+.promo_title {
+color: fff;
+font-size: 42px;
+font-weight: 700;
+color: brown;
+}
+.promo_subtitle {
+ font-size: 16px;
+text-transform: uppercase;
+color: brown;
+letter-spacing: -2px;
+font-weight: 600px;
+}
+.promo_title_border {
+    padding-top: 96px;
+}
+main {
+    padding: 30px 0 15px;
+    
+}
+
+
+
+
+.content {
+    width: 45%;
+    float: left;
+   
+
+}
+.col1, .col2 {
+    width: 27.5%;
+    float: left;
+    
+    
+    
+}
+.clearfix::after {
+    content: '';
+    clear:both
+}
+
+
+
+
+
+.col1 {
+padding: 19px 15px 0px 21px;
+background-color: #f2f2f2;
+}
+
+.col1 h2 {
+text-transform: uppercase;
+font-size: 16px;
+margin: 0 0 30px 0;
+color: #b40f6d;
+}
+
+.col1 li {
+padding: 0 0 23px 0;
+border-bottom: 1px solid #f2f2f2;
+margin: 0 0 31px 0  ;
+}
+.col1 h3 {
+text-transform: uppercase;
+font-size: 12px;
+padding: 0 15px;
+margin: 0px 9px 20px 9px;
+display: inline-block;
+background-color:#bb096b;
+color: #fff;
+font-weight: 500;
+
+}
+.col1 span {
+padding: 1px 0 0 0;
+display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col2 {
+padding: 19px 15px 15px 21px;
+}
+.col2 h3 {
+font-size: 16px;
+text-transform: uppercase;
+color: #b40f6d;
+}
+.col2 ul {
+padding: 21px 0 39px 0;
+font-size: 10px;
+text-transform: uppercase;
+list-style: circle;
+}
+.col2 li {
+padding: 0 0 10px 7px;
+list-style-position: inside ;
+}
+.col2 li a {
+text-decoration: none;
+font-weight: 700;
+color: #bc096f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content h2 {
+font-size: 27.1px;
+text-transform: lowercase;
+letter-spacing: -2px;
+color: #b40f6d;
+padding: 25px 0 0 0;
+}
+.content h3 {
+font-size: 7px;
+text-transform: uppercase;
+padding: 12px 0 0 0;
+}
+.content_1col_text {
+display: inline-block;
+padding: 25px 0 0 0;
+}
+.content_1col {
+font-size: 14px;
+
+}
+.content_1col_text p{
+line-height: 1.77;
+}
+.coments {
+    padding: 32px 0 34px 0;
+}
+.content_1col_text ul li a {
+text-decoration: none;
+display: inline-block;
+padding: 0 3px;
+color: #b40f6d;
+font-weight: 800;
+}
+.content_1col_text li {
+display: inline-block;
+padding: 0 0 0 0;
+}
+
+
+.tags {
+    
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    padding: 8px;
+    ;
+}
+.tags span {
+display: inline-block;
+
+
+}
+.tags ul {
+display: inline-block;
+}
+.color {
+display: inline;
+
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+width: 100%;
+height: 100px;
+display: inline-block;
+position: relative;
+background-color: black;
+margin: 13px 0 0 0;
+}
+.footer_text {
+color: floralwhite;
+margin: 0 auto;
+text-align: center;
+margin: 38px 0 0 0;
+}
+.footer_text h2 {
+    font-size: 9px;
+text-transform: uppercase;
+}
+
