@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9d9d9d;
+}  
+
+.container {
+    max-width: 960x;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.osnova {
+    padding: 55px 142px 60px;
+
+}
+.part {
+    width: 33.33334%;
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 0 50px 0;
+}
+
+.part span {
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    padding: 10px 0 12px 0;
+}
+
+.icon {
+text-align: center;
+
+}
+
+
+.icon_phone {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    
+}
+.icon_phone:hover {
+    background-color: #fff;
+}
+
+.icon_phone_white {
+    background-position: 18px 16px;
+
+}
+
+.icon_phone_white:hover {
+    background-position: 18px -44px;
+}
+
+
+.icon_gear {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+
+.icon_gear:hover {
+    background-color: #fff;
+}
+
+.icon_gear_white {
+    background-position: -72px 14px;
+}
+
+.icon_gear_white:hover {
+    background-position: -72px -44px;
+}
+
+.icon_metter {
+    display: inline-block;
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    border: 1px solid #1275b9;
+    background-color: #1275b9;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+}
+
+
+.icon_metter:hover {
+    background-color: #fff;
+}
+
+.icon_metter_white {
+    background-position: -171px 13px;
+
+}
+.icon_metter_white:hover {
+    background-position: -171px -47px;
+}

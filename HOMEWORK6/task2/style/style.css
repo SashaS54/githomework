@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #3b3f45;
+    
+
+}
+
+.container_for_header {
+    background-color: #4a4f56;
+    text-align: center;
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+    border-top: 30px solid #fff;
+
+}
+
+
+.name {
+    display: inline-block;
+    color: #eb7e7f;
+    padding: 20px 0 0 0;
+
+}
+.name h1 {
+    padding: 0 0 10px 0;
+
+}
+
+.name span {
+padding: 0 0 30px 0;
+display: inline-block;
+
+}
+
+
+/*================================================*/
+.container_for_list {
+    text-align: center;
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+
+}
+
+.list {
+    display: inline-block;
+    padding: 30px 0 0 0;
+    margin: 0 0 30px 0;
+
+}
+
+
+}
+
+.list {
+    padding: 30px 0 0 0;
+
+}
+
+.list ul {
+    list-style: none;
+    text-align: center;
+}
+
+.list ul li label {
+    display: inline-block ;
+    font-size: 30px ;
+    background-color: #88839e;
+    padding: 6px;
+    border: 4px solid #88839e;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.list ul li label span span {
+    font-size: 20px;
+    color: #b8cbd6;
+
+}
+
+.list ul li:nth-child(even) label {
+    background-color: #7a7593;
+    border: 4px solid #7a7593;
+
+}
+
+.list ul li label input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px ;
+
+
+}
+
+.list ul li label:hover {
+    background-color: #625e77;
+    border: 4px solid #fff;
+
+}
+
+.list ul li label:active {
+    background-color: lightcoral;
+    border: 4px solid #fff;
+
+}
+
+.list ul li label span span::before {
+    content: '(';
+
+}
+
+.list ul li label span span::after {
+    content: ')';
+
+}
+
+.list ul li label input:checked  ~ span{
+    color: #a3a0b5;
+    text-decoration: line-through;
+
+
+}
+
+.list ul li label input:checked ~ span span {
+    color: #a3a0b5;
+    text-decoration: line-through;
+
+}
+
+
+/*===================================*/
+
+
+
+.container_for_footer {
+   
+    text-align: center;
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+    border-bottom: 30px solid #fff;
+    padding: 0 0 100px 0;
+
+
+}
+
+.footer_fone { 
+    background-color: #4a4f56;
+    width: 650px;
+    display: inline-block;
+
+}
+
+.footer_text {
+    font-size: 40px;
+    color: indianred;
+    display: inline-block;
+    padding: 30px 0px;
+   
+
+}

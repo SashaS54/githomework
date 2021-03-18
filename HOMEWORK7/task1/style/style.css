@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+/*============================== FOOTER START =========*/
+.name {
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+    
+}
+
+.margin_bottom {
+    margin: 0 0 100px  0;
+
+}
+
+.text {
+    margin:  142px 0 0px 0 ;
+}
+
+.who {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #898f99;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 auto 22px ;
+   
+    
+}
+.name h1 {
+
+   font-family: 'Montserrat', sans-serif;
+    color: #0ec8cb;
+    font-size: 48px;
+    margin: 0 auto 25px;
+    
+
+}
+
+.abbout {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.66;
+}
+
+/*========================== FOOTER END===================================*/
+/*========================= MAIN START===========================*/
+/*========================= MAIN BLOCK START===========================*/
+.block {
+    width: 25%;
+    display: inline-block;
+    margin: 0 -2px;
+    background-color: #f7f7f7;
+    
+    
+}
+
+.icon {
+    text-align: center;
+}
+
+/*==========================MAIN BLOCK END=====================*/
+/*==========================MAIN BLOCKS START====================*/
+.h3 {
+    text-transform: uppercase;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    
+    
+}
+
+.p {
+    font-size: 14px;
+     font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    padding: 0 30px 0;
+    font-weight: 500;
+    margin: 0 0 70px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/*=============================BLOCK ANIMATIONS START ===============================*/
+.icon1 {
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: 0px -1px;
+    display: inline-block;
+    margin: 56px 0 48px 0;
+}
+
+
+.block:hover {
+    background-color: #0ec8cb;
+}
+.block:hover .icon1 {
+    background-position: 0 -101px;
+
+}
+.block:hover .p {
+    background-color: #0ec8cb;
+}
+/*================================================================*/
+.icon2 {
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: -114px -1px;
+    display: inline-block;
+    margin: 56px 0 48px 0;
+}
+
+.block2:hover {
+    background-color: #0ec8cb;
+}
+.block2:hover .icon2 {
+    background-position: -114px -101px;
+
+}
+/*================================================================*/
+.icon3 {
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: -219px -1px;
+    display: inline-block;
+    margin: 56px 0 48px 0;
+}
+
+.block3:hover {
+    background-color: #0ec8cb;
+}
+.block3:hover .icon3 {
+    background-position: -219px -101px;
+
+}
+/*================================================================*/
+.icon4 {
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: -314px -1px;
+    display: inline-block;
+    margin: 56px 0 48px 0;
+}
+
+.block4:hover {
+    background-color: #0ec8cb;
+}
+.block4:hover .icon4 {
+    background-position: -314px -101px;
+
+}
+/*===========================BLOCK ANIMATIONS END =======================*/
+/* ========================== MAIN BLOCK END  ==================*/
