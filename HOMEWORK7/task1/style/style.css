@@ -110,6 +110,10 @@
     margin: 56px 0 48px 0;
 }
 
+.block:hover .h3  {
+    color: #fff;
+
+}
 
 .block:hover {
     background-color: #0ec8cb;
@@ -120,6 +124,7 @@
 }
 .block:hover .p {
     background-color: #0ec8cb;
+    color: #fff;
 }
 /*================================================================*/
 .icon2 {
