@@ -1,0 +1,9 @@
+@font-face { 
+  font-family: 'Neue'; 
+  src: url('../fonts/NeueHansKendrick-Regular.otf') format('woff2'),                  
+       url('../fonts/NeueHansKendrick-Regular.otf') format('woff');                    
+
+
+  font-weight: normal; 
+  font-style: normal; 
+}

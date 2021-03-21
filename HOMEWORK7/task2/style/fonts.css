@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Wether';
+  src: url('../fonts/weathericons-regular-webfont.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lusida grande';
+  src: url('../fonts/8291.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lusida sans';
+  src: url('../fonts/ofont.ru_Lucida\ Sans\ Unicode.ttf') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

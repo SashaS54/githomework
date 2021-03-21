@@ -1,0 +1,107 @@
+
+
+.bg {
+    background-color: #3399cc;
+    border: 25px solid #2a7da7
+}
+
+i {
+    font-family: 'Wether';
+}
+
+.weather {
+    padding-top: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    text-align: left;
+    font-family: 'lusida sans';
+    font-size: 30px;
+    letter-spacing: 1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 90%; 
+    text-align: center;
+
+
+
+}
+
+
+
+
+.list {
+    list-style: none;
+
+    background-color: #fff;
+    padding: 3px;
+
+
+
+}
+.block1 {
+    width: 25%;
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 3px;
+        text-align: center;
+
+
+}
+
+.block5 {
+    width: 50%;
+
+
+}
+
+.block10 {
+    width: 100%;
+
+}
+
+.lis {
+    background-color: #3399cc;
+}
+.par {
+    background: #33cccc;
+}
+.bel {
+    background-color: #996699;
+}
+
+.mosk {
+    background-color: #c24747;
+
+}
+.tel {
+    background-color: #c24747;
+}
+.cair {
+    background-color: #e2674a;
+}
+.york {
+    background-color: #99cc99;
+}
+.delhi {
+    background-color: #669999;
+}
+.san {
+    background-color: #cc6699;
+}
+.tok {
+    background-color: #339966;
+}
+.syd {
+    background-color: #666699;
+}
