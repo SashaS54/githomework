@@ -1,21 +1,20 @@
 
-
-.bg {
-    background-color: #3399cc;
-    border: 25px solid #2a7da7
-}
-
-i {
-    font-family: 'Wether';
-}
-
-.weather {
-    padding-top: 30px;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*.bg {
+    background-color: #3399cc;
+    border: 25px solid #2a7da7;
+    */
+}
+
+
+
+.weather {
+    padding-top: 30px;
 }
 
 

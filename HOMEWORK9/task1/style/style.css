@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.main {
+    background-color: #fff;
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #171717;
+
+}
+
+h1 {
+    font-size: 42px;
+    font-family: 'Playfair Display';
+    padding: 0 0 38px 0;
+}
+
+.text {
+    line-height: 34px;
+    letter-spacing: 1px;
+}
+
+.text::first-letter {
+    font-size: 110px;
+    font-family: 'Playfair Display';
+    float: left;
+    line-height: 0.9;
+    padding: 0 6px 0 0;
+}

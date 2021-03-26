@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'raleway_thinregular';
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.blog {
+    background-color: #b07cf7;
+    color: #ffffff;
+    padding-top: 80px;
+}
+
+.blog_name{
+    font-family: 'raleway_thinbold';
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 24px;
+
+
+}
+
+.blog_discription {
+    font-family: raleway_thinligh;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto;
+    width: 48.71%;
+    line-height: 25px;
+    padding-bottom: 50px;
+
+}
+
+.blog_blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 310px;
+    margin-bottom: 50px;
+    
+
+}
+
+.blog_block {
+    width: calc(33.3333% - 20px);
+    position: relative;
+    box-shadow: 2px 2px 9px rgba(29, 27, 27, 0.637);
+    height: 310px;
+
+
+
+
+}
+
+.blog_block:hover .date {
+    top: 40px;
+    left: 40px;
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+.block_img {
+    position: relative;
+    
+
+}
+
+.date {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 5px;
+    top: -60px;
+    left: -60px;
+    opacity: 0;
+    background-color:rgba(0,0,0,.8);
+    text-align: center;
+}
+
+.day {
+    font-size: 32px;
+    font-family: 'raleway_thinbold';
+    color: #fff;
+    opacity: 100%;
+}
+
+.month {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: raleway_thinblack;
+}
+
+
+
+
+
+.block_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px;
+    font-family: raleway_thinbold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    background-image: linear-gradient(180deg, rgba(0 , 0 , 0 ,0) 0%, rgba(0, 0, 0, 0.5) 10% rgba(0, 0, 0, 0.95) 100% );
+    
+}
+
+.blog_time {
+    font-size: 13px;
+    font-family: raleway_thinlight;
+    padding-top: 16px;
+    line-height: 12px;
+}
+
+
+.button {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: raleway_thinlight;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 40px;
+    background-color: #f72b3b;
+    margin-bottom: 120px;
+    transition: all .2s ease-in;
+    box-shadow: 2px 2px 9px rgba(29, 27, 27, 0.637);
+}
+
+.button:hover {
+    background: white;
+    color: #f72b3b;
+}
