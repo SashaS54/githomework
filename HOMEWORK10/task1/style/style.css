@@ -5,42 +5,212 @@
 
 }
 
-body {
-    font-family: 'raleway_thinregular';
+html body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #262626;
 }
 
 .container {
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
-    text-align: center;
+
     
 }
 
+/*=============================button===============*/
+.button {
+    display: inline-block;
+    text-align: center;
+    padding-top: 14px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #f72b3b;
+    transition: all .2s ease-in;
+    box-shadow: 2px 2px 9px rgba(29, 27, 27, 0.637);
+    width: 200px;
+    height: 50px;
+}
+.button:hover {
+    background: white;
+    color: #f72b3b;
+}
+
+/*=============================button===============*/
+/*=============================h2===============*/
+
+.block_name_h2{
+    font-size: 90px;
+    font-weight: 700;
+    padding-bottom: 26px;
+    color: #fff;
+    
+}
+/*=============================h2===============*/
+/*==================header===============*/
+
+
+header {
+   width: 100%;
+   background-color: #fff;
+   position: fixed;
+   height: 150px; 
+   font-family: 'Raleway', sans-serif;
+   opacity: 50%;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav {
+    list-style: none;
+    display: inline-flex;
+    width: 53.2710%;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #262626;
+    padding: 8px 0;
+
+}
+
+.nav li a:hover {
+    border-top: 3px solid #ff6033;
+
+}
+
+
+/*==================header===============*/
+/*==========================main_section=============*/
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #262626;
+    padding-bottom: 22px;
+}
+
+
+.main_section {
+    background-color: #f9f8fb;
+    background-image: url(../images/main-section-fone.png);
+    background-repeat: no-repeat;
+
+
+}
+
+.main_section_content{
+    padding: 346px 0 404px;
+}
+
+.main_section_content p {
+    font-weight: 300;
+    font-size: 17px;
+    color: #262626;
+    width: 30%;
+    padding-bottom:24px ;
+
+
+}
+
+/*==========================main_section=============*/
+
+/*=====================about_us=======================*/
+
+.about_section {
+        background-color: #00bbbb;
+
+        
+        
+
+    }
+
+.about_section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_section_background {
+    width: 43%;
+}
+
+.about_section_content{
+    width: 43%;
+    text-align: left;
+    padding:166px 0 224px;
+
+}
+
+
+.about_section_h2 {
+    padding-bottom: 24px;
+}
+
+.about_section_content p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 27px;
+    padding-bottom:  14px;
+
+
+}
+
+.about_section_content p:last-child  {
+    padding: 0;
+}
+
+/*=====================about_us=======================*/
+
+
+
+/*=================================blog_section===============*/
 .blog {
     background-color: #b07cf7;
     color: #ffffff;
     padding-top: 80px;
+
 }
 
-.blog_name{
-    font-family: 'raleway_thinbold';
-    font-size: 90px;
-    font-weight: bold;
+.blog .container h2 {
     text-align: center;
-    padding-bottom: 24px;
-
 
 }
 
 .blog_discription {
-    font-family: raleway_thinligh;
+
     font-size: 17px;
     text-align: center;
     margin: 0 auto;
     width: 48.71%;
     line-height: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
+    font-weight: 300;
 
 }
 
@@ -52,7 +222,6 @@ body {
     height: 310px;
     margin-bottom: 50px;
     
-
 }
 
 .blog_block {
@@ -60,10 +229,16 @@ body {
     position: relative;
     box-shadow: 2px 2px 9px rgba(29, 27, 27, 0.637);
     height: 310px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    display: block
 
+}
 
-
-
+.blog_block:hover{
+    box-shadow: 20px 20px 36px rgba(29, 27, 27, 0.637);
+    transition: all .5s ease-in;
 }
 
 .blog_block:hover .date {
@@ -93,7 +268,7 @@ body {
 
 .day {
     font-size: 32px;
-    font-family: 'raleway_thinbold';
+    font-weight: 700;
     color: #fff;
     opacity: 100%;
 }
@@ -101,51 +276,181 @@ body {
 .month {
     font-size: 21px;
     text-transform: uppercase;
-    font-family: raleway_thinblack;
+    font-weight: 900;
 }
-
-
-
-
 
 .block_text {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 0 20px 20px;
-    font-family: raleway_thinbold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 25px;
     text-align: left;
-    background-image: linear-gradient(180deg, rgba(0 , 0 , 0 ,0) 0%, rgba(0, 0, 0, 0.5) 10% rgba(0, 0, 0, 0.95) 100% );
+    background:linear-gradient(360deg, rgba(24, 23, 23, 0.3), rgba(29, 28, 28,50%));   
     
 }
 
 .blog_time {
     font-size: 13px;
-    font-family: raleway_thinlight;
+    font-weight: 300;
     padding-top: 16px;
     line-height: 12px;
 }
 
 
-.button {
-    display: inline-block;
-    margin: 0 auto;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: raleway_thinlight;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fff;
-    padding: 15px 40px;
-    background-color: #f72b3b;
-    margin-bottom: 120px;
-    transition: all .2s ease-in;
-    box-shadow: 2px 2px 9px rgba(29, 27, 27, 0.637);
+.button_blog {
+    text-align: center;
+    padding-bottom: 120px;
 }
 
-.button:hover {
-    background: white;
-    color: #f72b3b;
+/*======================================blog=================*/
+
+/*==========================================contact*/
+
+.contact_section {
+    background-image: url(../images/contact-section_background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top:  90px;
+
+}
+
+
+.contact_section_name {
+    text-align: center;
+}
+
+.contact_name_h2 {
+    color: #262626;
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    width: 31.6239%;
+    color: #262626;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.contact_section_content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+
+}
+
+form  {
+    width: 42.735%;
+}
+
+form input {
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #77d9d8;
+    border-left: 5px solid transparent;
+    margin-bottom: 15px;
+    border-radius: none;
+    font-family: 'Raleway';
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+input::-moz-placeholder {
+    color: #fff;
+    font-weight: 300; 
+}
+
+
+textarea {
+    border: none;
+    width: 500px;
+    height: 250px;
+    background-color: #77d9d8;
+    color: #fff;
+    border-radius: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+   textarea::-moz-placeholder {
+    color: #fff; 
+    font-size: 15px;
+    font-weight: 300;
+}
+
+textarea:focus {
+    border-left: 5px solid #355b82;
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.8);
+
+}
+input:focus {
+    border-left: 5px solid #355b82;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    outline: none;
+
+}
+
+
+.requisites dt {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 4px;
+
+}
+
+.requisites dd{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 4px;
+
+}
+
+/*=====================contacts=======================*/
+/*======================footer-====================*/
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway';
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rights {
+    font-size: 16px;
+    color: #b9b9b9;
+    font-weight: 300;
+}
+
+.creator {
+    font-size: 15px;
+    font-weight: 300;
+    color: #b9b9b9;
+}
+
+.love {
+    color: #ff2b58;
+    font-weight: 600;
 }

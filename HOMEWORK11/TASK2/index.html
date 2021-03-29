@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <img class="logo" src="images/logo.png" alt="" >
+        <div class="product__images">
+            <img class="product__image" src="images/Nike-SB-Stefan-Janoski-Max.png" alt="">
+            <ul class="product__color-choices">
+                <li class="product__color-choice"><a class="color-choice__link color-choice__link-black color-choice__link-active"></a></li>
+                <li class="product__color-choice"><a class="color-choice__link color-choice__link-white"></a></li>
+                <li class="product__color-choice"><a class="color-choice__link color-choice__link-red"></a></li>
+                <li class="product__color-choice"><a class="color-choice__link color-choice__link-blue"></a></li>
+            </ul>
+        </div>
+        <div class="product__info">
+            <div class="product__name">
+                Nike SB Stefan Janoski Max
+            </div>
+            <div class="product__type">
+                Unisex Skateboarding Shoe
+            </div>
+            <div class="product__mark ">
+                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+            <form class="product__parameters" action="#" method="Get">
+                <select class="parameters__choice product__choice-size " form="" name="size">                   
+                    <option value="" disabled selected>Size</option>                    
+                    <option value="11">11</option>                    
+                    <option value="12">12</option>                    
+                    <option value="13">13</option>                    
+                    <option value="14">14</option>                    
+                </select>
+                <select class="parameters__choice parameters__choice-Qty" form="" name="size">                   
+                    <option value="" disabled selected>Qty</option>                     
+                    <option value="11">1</option>                    
+                    <option value="12">2</option>                    
+                    <option value="13">3</option>                    
+                    <option value="14">4</option>                    
+                </select>
+            </form>
+            <a class="button button--active button-black" href="#">Add to cart</a>
+            
+        </div>
+    </div>
+</body>
+</html>
