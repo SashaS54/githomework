@@ -186,8 +186,132 @@ h1 {
 }
 
 /*=====================about_us=======================*/
+/*=====================our services=======================*/
+
+.services_section {
+    background-color: #70bfff;
+}
 
 
+.services_section_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.services_list {
+    width: 48,717%;
+    display: flex;
+    padding: 179px 0 151px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.services_list li{
+    list-style: none;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:2px 2px 9px rgba(0, 0, 0, .20);
+
+}
+
+
+
+.services_list li:hover a  {
+    background-color: #111a28 ;
+    color: #fff;
+    transition: all .3s ease-in;
+
+
+
+}
+.services_list li:hover .service_icon {
+    stroke:#fff;
+
+}
+.services_list li:hover .services_list-link-text::after {
+    height: 0;
+ 
+    transition: all .3s ease-in;
+}
+
+.services_list li:hover .services_list-link-image::before {
+    height: 100%;
+    background-color: #fff;
+    transition: all .35s ease-in;
+}
+
+
+.services_list-link-text {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #262626;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+.services_list-link-text::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #111a28;
+
+}
+
+
+.services_list-link-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 1px;
+    background-color: transparent;
+
+}
+
+
+.services_list-link-image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.services_section_background_image { 
+    width: 48.717%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/services-section-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 179px 0 151px;
+
+}
+
+
+/*=====================our services=======================*/
 
 /*=================================blog_section===============*/
 .blog {
@@ -283,7 +407,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 20px 20px;
+    padding: 0 20px 23px;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
@@ -295,7 +419,7 @@ h1 {
 .blog_time {
     font-size: 13px;
     font-weight: 300;
-    padding-top: 16px;
+    padding-top: 19px;
     line-height: 12px;
 }
 
@@ -307,7 +431,7 @@ h1 {
 
 /*======================================blog=================*/
 
-/*==========================================contact*/
+/*==========================================contact===============*/
 
 .contact_section {
     background-image: url(../images/contact-section_background.png);
@@ -357,6 +481,7 @@ form input {
     margin-bottom: 15px;
     border-radius: none;
     font-family: 'Raleway';
+    opacity: 0.8;
 }
 
 input::-webkit-input-placeholder {
@@ -379,6 +504,8 @@ textarea {
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 15px;
 }
 
 textarea::-webkit-input-placeholder {
@@ -414,11 +541,38 @@ input:focus {
 
 }
 
-.requisites dd{
+.requisites a{
+    text-decoration: none;
+    color: #333131;
     font-size: 20px;
     font-weight: 300;
     padding-bottom: 4px;
+    position: relative;
 
+}
+
+.requisites a::after {
+    content: '';
+    height: 2px;
+    background-color: #333131;
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+    left: 0;
+    opacity: 0.3;
+    transition: all .3s ease-in;
+}
+
+.requisites a:hover::after {
+    opacity: 1;
+}
+
+.button-send {
+    width: 100%;
+    background-color: #77d9d8;
+}
+.button-send:hover {
+    color: #77d9d8;
 }
 
 /*=====================contacts=======================*/
