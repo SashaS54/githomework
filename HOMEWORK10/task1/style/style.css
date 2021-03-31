@@ -62,12 +62,12 @@ main {
 
 
 header {
-   width: 100%;
-   background-color: #fff;
-   position: fixed;
-   height: 150px; 
-   font-family: 'Raleway', sans-serif;
-   opacity: 50%;
+width: 100%;
+background-color: #fff;
+position: fixed;
+height: 150px; 
+font-family: 'Raleway', sans-serif;
+opacity: 50%;
 }
 
 .header_flex {
@@ -236,7 +236,7 @@ h1 {
 }
 .services_list li:hover .services_list-link-text::after {
     height: 0;
- 
+
     transition: all .3s ease-in;
 }
 
@@ -518,7 +518,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 300;
     
 }
-   textarea::-moz-placeholder {
+textarea::-moz-placeholder {
     color: #fff; 
     font-size: 15px;
     font-weight: 300;
