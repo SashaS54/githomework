@@ -217,7 +217,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     box-shadow:2px 2px 9px rgba(0, 0, 0, .20);
-
+    transition: all .35s ease-in;
 }
 
 
@@ -227,11 +227,11 @@ h1 {
     color: #fff;
     transition: all .3s ease-in;
 
-
-
 }
+
 .services_list li:hover .service_icon {
     stroke:#fff;
+    transition: all .35s ease-in;
 
 }
 .services_list li:hover .services_list-link-text::after {
@@ -260,6 +260,7 @@ h1 {
     align-items: center;
     text-align: center;
     position: relative;
+    transition: all .35s ease-in;
 
 }
 .services_list-link-text::after{
@@ -271,7 +272,7 @@ h1 {
     height: 100%;
     width: 1px;
     background-color: #111a28;
-
+    transition: all .35s ease-in;
 }
 
 
@@ -283,7 +284,7 @@ h1 {
     height: 0;
     width: 1px;
     background-color: transparent;
-
+    transition: all .35s ease-in;
 }
 
 
@@ -295,6 +296,7 @@ h1 {
     align-items: center;
     text-align: center;
     position: relative;
+    transition: all .35s ease-in;
 }
 
 

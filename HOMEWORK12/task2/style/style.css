@@ -78,12 +78,60 @@
     border: none;
 }
 .signin_field_text-check {
-    width: auto;
+    width: 100%;
     cursor: pointer;
     padding-bottom: 0;
     margin-bottom: 44px;
     font-size: 13px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.input_none {
+    display: none;
+}
+
+.custom_checkbox {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+}
+.custom_checkbox::before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    width: 6px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-right: 1px solid #fff ;
+    transform: skewY(50deg);
+    opacity: 0;
+    transition: all .2s ease-in;
+
+}
+.input_none:checked + .custom_checkbox::before {
+    opacity: 1;
+}
+
+.input_none:checked + .custom_checkbox {
+    background-color: #23ae92;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .sign_in_button {
