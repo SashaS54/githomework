@@ -226,7 +226,7 @@ main {
                 }
                 &:hover{
                     box-shadow: 7px 7px 7px rgb(0, 0, 0, 0.6);
-                    transition: all .3s ease-in;
+                    transition: all .2s ease-in;
                 }
             }
             .link-block-big{
@@ -316,6 +316,9 @@ footer {
 }   
 
 @media screen and (max-width:676px){
+    main .section-images .link_list .link-block{
+        margin-bottom: 7px;
+    }
     main .section_about-us {
         
         padding: 80px 0
@@ -342,9 +345,67 @@ footer {
         height: 90px;
     }
 
+
 }
 @media screen and (max-width:550px) {
     .content {
         width: 80%;
     }
+}
+
+@media screen and (max-width:676px) {
+    main .section-images .link_list .link-block {
+        width: calc(50% - 3.5px);
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    footer .container .footer_content {
+        width: 325px;
+    }
+
+    main .contact_us_section .container .section_border .content .contact_us_button {
+            width: 250px;
+    }
+    .section_border-white::before {
+        width: 12%;
+    }
+    .section_border-white::after {
+        width: 12%;
+    }
+    .section_border-black::before {
+
+        width: 12%;
+    }
+    .section_border-black::after {
+
+        width: 12%;
+    }
+    main .title .container .content h1 {
+        font-size: 40px;
+   }
+   .h2 {
+       display: block;
+       text-align: center;
+   }
+   footer .container .footer_content {
+
+       width: 300px;
+   }
+   footer {
+       .container {
+           .footer_content {
+               img {
+                   display: none;
+               }
+           }
+       }
+   }
+   main .section-images .link_list .link-block {
+       width: calc(49%);
+   }
+   main .contact_us_section .container .section_border .content .contact_us_button{
+       width: 200px;
+   } 
 }
