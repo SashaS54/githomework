@@ -392,10 +392,16 @@ footer .container .footer_content {
   }
 
   main .section-images .link_list .link-block {
-    width: calc(49%);
+    width: 49%;
   }
 
   main .contact_us_section .container .section_border .content .contact_us_button {
     width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .container .footer_content {
+    width: 260px;
+    text-align: center;
   }
 }
