@@ -73,11 +73,19 @@ img {
 header {
   font-family: "Raleway", sans-serif;
   width: 100%;
-  background-color: #fff;
   position: fixed;
   height: 150px;
   z-index: 5;
-  box-shadow: 0 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+}
+header.fixed {
+  height: 60px;
+  box-shadow: 0 0 3px #999;
+  transition: all 0.3s ease-in;
+  background-color: #f9f8fb;
 }
 header .container nav {
   display: flex;
@@ -86,9 +94,8 @@ header .container nav {
 }
 header .container nav .nav {
   list-style: none;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
-  height: 150px;
   align-items: center;
 }
 header .container nav .nav li {
@@ -109,6 +116,7 @@ header .container nav .nav li a:hover {
 
 main {
   padding-top: 150px;
+  background-color: #f9f8fb;
 }
 main .main_section {
   background-color: #f9f8fb;

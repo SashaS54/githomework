@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <nav class="header_flex">
                 <div class="header_logo">
@@ -271,12 +271,23 @@
     </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
+        <script>
+            $(function() {
+                $(window) .scroll(function(){
+                    console.log($(window).scrollTop());
+                    if($(window).scrollTop()>100){
+                        $("header") .addClass("fixed");
+                    }else {
+                        $("header") .removeClass("fixed");
+                    }
+                });
+            });    
+        </script>
     <script src="js/maskedinput.js"></script>
     <script>
         $(document).ready(function(){
             $("#phone").mask('+012 999 999 99 99');
         });
-        
     </script>
 </body>
 </html>
