@@ -464,6 +464,9 @@ main {
                             font-size: 20px;
                             line-height: 25px;
                             text-align: left;
+                            max-height: 65%;
+                            overflow: hidden;
+                            width: 100%;
                             background:linear-gradient(360deg, rgba(24, 23, 23, 0.3), rgba(29, 28, 28,50%));                           
                             .blog_time {
                                 font-size: 13px;
@@ -471,6 +474,11 @@ main {
                                 padding-top: 19px;
                                 line-height: 12px;
                                 line-height: 15px;
+                                overflow: hidden;
+                            }
+                            .blog_discription {
+                                overflow: hidden;
+                                width: 100%;
                             }
                         }
                     }
@@ -964,6 +972,23 @@ footer {
     main .about_section .container .about_section_flex .about_section_content {
         padding: 60px 0;
     }
+    main .blog .container .container_center .blog_blocks .blog_block .date {
+        width: 40px;
+        height: 40px;
+        .day {
+            font-size: 15px;
+        }
+        .month  {
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+    main .blog .container .container_center .blog_blocks .blog_block {
+        &:hover .date{
+            left: 15px;
+            top: 15px;
+        }
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -980,5 +1005,8 @@ footer {
     }
     main .contact_section .container .contact_section_name .subtitl {
         width: 80%;
+    }
+    main .services_section .container .services_section_content .services_list li .services_list-link-text {
+        padding-right: 4px;
     }
 }
