@@ -888,7 +888,7 @@ footer .container .footer .creator .love {
 }
 @media screen and (max-width: 810px) {
   main {
-    padding-top: 0;
+    padding-top: 150px;
   }
 
   header {

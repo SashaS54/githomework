@@ -51,7 +51,7 @@ main {
             .mobile_menu_logo {
                 width: max-content;
                 padding-bottom: 10px;
-                }
+            }
         }
         .mobile_menu_nav {
             display: flex;
@@ -892,7 +892,7 @@ footer {
 }
 @media screen and (max-width:810px) {
     main {
-        padding-top: 0;
+        padding-top: 150px;
     }
     header {
         height: 60px;
