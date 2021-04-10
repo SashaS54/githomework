@@ -25,14 +25,13 @@
                     </button>
                     </div>
                 </div>
-                <ul class="mobile_menu_nav">
-                    <li><a href="#home">Home
-                    </a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="mobile_menu_nav" class="mobile_menu_nav">
+                    <li><a class="mb_link" href="#home">Home</a></li>
+                    <li><a class="mb_link" href="#about">About</a></li>
+                    <li><a class="mb_link" href="#services">Services</a></li>
+                    <li><a class="mb_link" href="#gallery">Gallery</a></li>
+                    <li><a class="mb_link" href="#blog">Blog</a></li>
+                    <li><a class="mb_link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -327,6 +326,10 @@
                     $(".hamburger_header button").removeClass("is-active");
                 });
                 $("#hamburger_opened").click(function(){
+                    $(".hamburger_header button").removeClass("is-active");
+                });
+                $(".mb_link").click(function(){
+                    $("body").toggleClass("open");
                     $(".hamburger_header button").removeClass("is-active");
                 });
             });    
