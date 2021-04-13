@@ -11,6 +11,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="menu_shadow"></div>
+    <div class="shadow"></div>
+    <div id="message">
+        <div class="text">
+            To open modal menu, click button on "get free now"
+        </div>
+        <div id="message_button">
+            OK
+        </div>
+    </div>
+    <div id="modal_menu" class="closed">
+        <div class="modal_menu_text">
+            You read and agree with our privace policy
+        </div>
+        <div class="modal_menu_buttons">
+            <div class="modal_menu_buttons_list">
+                <button id="prives_policy_agree" class="prives_policy_button">YES</button>
+                <button id="prives_policy_disagree" class="prives_policy_button">NO</button>
+            </div>
+            <a href="#" class="link_to_prives_policy">Prives policy</a>
+        </div>
+    </div>
     <div id="mobile_menu_block" class="open">
         <div class="container">
             <nav class="mobile_menu">
@@ -37,7 +59,7 @@
         </div>
     </div>
 
-    <div id="menu_shadow"></div>
+   
 
     <header class="header">
         <div class="container">
@@ -70,7 +92,7 @@
                 <div class="main_section_content">
                     <h1>Fresh Life</h1>
                     <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <a class="button" href="#">Get free now</a>
+                    <a class="button button_for_mobile_menu" href="#">Get free now</a>
                 </div>
             </div>
         </section>
@@ -331,6 +353,17 @@
                 $(".mb_link").click(function(){
                     $("body").toggleClass("open");
                     $(".hamburger_header button").removeClass("is-active");
+                });
+                $("#message_button").click(function(){
+                    $("#message").toggleClass("closed");
+                });
+                $(".button_for_mobile_menu").click(function(){
+                    $("body .shadow").toggleClass("open");
+                    $(modal_menu).toggleClass("open");
+                });
+                $(".prives_policy_button").click(function(){
+                    $("body .shadow").removeClass("open");
+                    $(modal_menu).removeClass("open");
                 });
             });    
         </script>

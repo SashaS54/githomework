@@ -25,7 +25,140 @@ main {
     background-color: rgba(0,0,0, .8);
     z-index: 100;
     display: none;
+}
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0,0,0, .8);
+    z-index: 100;
+    display: none;
+}
 
+#message {
+    width: 99%;
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: 102;
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #e4e4e4;
+    box-shadow: 0 0 3px rgba (0,0,0, 0.4);
+    padding: 20px 15px;
+    text-align: center;
+    .text {
+        font-size: 16px;
+        font-family: 'raleway', sans-serif;
+        margin-bottom: 10px;
+        display: block;
+        text-align: left;
+    }
+    #message_button {
+        background-color: #00f;
+        width: 50px;
+        padding: 5px 0;
+        margin: 0 auto;
+        color: #Fff;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        border: 0;
+;
+        &:hover {
+            background-color: rgb(68, 68, 146);
+        }
+    }
+}
+
+#modal_menu {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 103;
+    background-color: #fff;
+    padding: 10px 10px 0;
+    .modal_menu_text {
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+    .modal_menu_buttons {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px; 
+        .modal_menu_buttons_list {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            .prives_policy_button {
+                border: 0;
+                padding: 5px;
+                background-color: #00f;
+                color: #fff;
+                cursor: pointer;
+                transition: all .2s ease-in;
+                &:hover {
+                    background-color: rgb(68, 68, 146);
+                    transition: all .2s ease-in;
+                }
+            }
+        }
+        .link_to_prives_policy {
+            font-size: 18px;
+            position: relative;
+            color: gray;
+            display: inline-block;
+            transition: all .3s ease-in;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 1px;
+                transform: translate(-50%, 0);
+                height: 2px;
+                background-color: gray;
+                width: 100%;
+                transition: all .3s ease-in;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                bottom: 1px;
+                height: 2px;
+                background-color: rgb(68, 68, 146);
+                width: 0;
+                transition: all .3s ease-in;
+            }
+            &:hover {
+                color: rgb(68, 68, 146);
+                transition: all .3s ease-in;
+            }
+            &:hover::before {
+                width: 100%;
+                transition: all .3s ease-in;
+            }
+            &:hover::after {
+                width: 0;
+                transition: all .3s ease-in;
+            }
+        }
+    }
+}
+
+.closed {
+    display: none;
+}
+.open {
+    display: block;
 }
 
 #mobile_menu_block {
@@ -97,6 +230,8 @@ main {
         }
     }
 }
+
+
 
 .open #menu_shadow{
     display: block;
