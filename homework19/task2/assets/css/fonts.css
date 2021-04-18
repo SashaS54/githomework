@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "beban";
+    src: url("../../fonts/BebasNeue\ Regular.otf") format("woff2"),
+           url("../../fonts/BebasNeue\ Regular.otf") format("woff");
+           font-weight: 400;
+   }
+   @font-face {
+    font-family: "beban";
+    src: url("../../fonts/BebasNeue\ Thin.otf") format("woff2"),
+           url("../../fonts/BebasNeue\ Thin.otf") format("woff");
+           font-weight: 300;
+   }
