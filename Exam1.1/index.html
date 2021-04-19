@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5474fd">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#5474fd">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/hamburger.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Document</title>
+    <meta property="og:locale" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
 </head>
 <body>
     <div id="menu_shadow"></div>
@@ -20,7 +40,7 @@
                     <div class="logo logo_mobile">
                         Bhromaon
                     </div>
-                    <div id="hamburger_opened humburger_mobile" class="burger "><button class="hamburger hamburger--arrowturn is-active" type="button" >
+                    <div id="hamburger_opened" class="burger "><button class="hamburger hamburger--arrowturn is-active" type="button" >
                         <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                         </span>
@@ -37,18 +57,12 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <div class="first_screen">
         <div class="container">
             <div class="serch_section_content">
                 <h1>Bhromaon</h1>
                 <span class="subtitle">Safe Travel Anywhere</span>
-                <form method="GET" name="search"><!--!!!!!!!!!!-->
+                <form method="GET" name="search">
                         <input type="text" name="search" placeholder="Search Your Travel Destination">
                         <button type="submit" class="search_button"><span class="search_button_text">Search</span><svg 
                             xmlns="http://www.w3.org/2000/svg"
@@ -98,15 +112,14 @@
                         <div class="button_bgc"><a class="button" href="#">Explore Places </a></div>
                     </div>
                     <div class="about_us_section_images">
-                        <div class="abbout_us_section_image_1"><img src="assets/images/about-us-img-2-min.png" alt=""></div>
-                        <div class="abbout_us_section_image_2"><img src="assets/images/about-us-img-1-min.png" alt=""></div>
+                        <div class="about_us_section_image_1"><img class="lazy" data-src="assets/images/about-us-img-2-min.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
+                        <div class="about_us_section_image_2"><img class="lazy" data-src="assets/images/about-us-img-1-min.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
                     </div>
                 </div>
             </div>
 
         </section>
  <section class="turns_section">
-            
             <div class="container">
 
                     <ul class="steps">
@@ -182,7 +195,7 @@
                     <h2 class="h2">What Our Tourist Say</h2>
                     <div class="coment">
                         <div class="coment_img">
-                            <img src="assets/images/coment-section-img-1-min.png" alt="#" >
+                            <img data-src="assets/images/coment-section-img-1-min.png"  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" class="lazy" alt="#" >
                         </div>
                         <div class="text_bgc">
                             <div class="text">
@@ -246,7 +259,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="assets/js/intersection-observer.js"></script> 
+    <script src="assets/js/lazyload.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script>     
             $(function() {

@@ -1,4 +1,7 @@
 @import 'reset';
+
+
+//=========================
 .container {
     width: 90%;
     max-width: 1110px;
@@ -73,7 +76,7 @@ h2 {
     color: #fff;
 }
 //===============================================
-
+//==============mobile_elements=============
 #menu_shadow {
     position: fixed;
     left: 0;
@@ -154,7 +157,7 @@ h2 {
 }
 
 //=======================================================
-
+//=================first_screen=========
 .first_screen {
     background-image: url(../images/first_screen_img-min.png);
     background-size: cover;
@@ -246,7 +249,8 @@ h2 {
     }
 
 }
-
+//=================================
+//===============header====================
 header {
     width: 100%;
     background-color: #5474fd;
@@ -319,6 +323,8 @@ header {
     display: none;
 }
 
+//========================================
+//==============about-section==========
 
 .about_us_section {
     padding-top: 120px;
@@ -357,7 +363,7 @@ header {
         display: flex;
         flex-direction: column;
 
-        .abbout_us_section_image_1 {
+        .about_us_section_image_1 {
             padding-left: 65px;
             padding-bottom: 4px;
             img {
@@ -368,7 +374,7 @@ header {
             }
 
         }
-        .abbout_us_section_image_2 {
+        .about_us_section_image_2 {
             display: flex;
             flex-direction: row-reverse;
             img {
@@ -380,6 +386,9 @@ header {
         }
     }
 }
+
+//======================
+//===========turns_section========
 
 .turns_section {
     background-color: #333333;
@@ -434,7 +443,8 @@ header {
         }
     }
 }
-
+//==================================
+//=============curort_section===============
 
 .curort_section {
     padding-top: 229px;
@@ -481,6 +491,9 @@ header {
         margin-bottom: 50px;
     }
 }
+
+//======================
+//=======coments_section
 
 .coments_section {
     background-image: url(../images/coment-section_bgc.png);
@@ -545,6 +558,9 @@ header {
     }
 }
 
+//=============================
+//=============footer=============
+
 footer {
     background-color: #232323;
     padding-top: 120px;
@@ -590,19 +606,17 @@ footer {
 
 }
 
-
-
-
-
+//============================
+//============adaptive=============
 
 @media screen and (max-width:958px) {
     .about_us_section_content {
         .about_us_section_images {
-            .abbout_us_section_image_1 {
+            .about_us_section_image_1 {
                 padding-left: 25px;
                 margin-bottom: 20px;
             }
-            .abbout_us_section_image_2 {
+            .about_us_section_image_2 {
                 padding-left: 25px;
                 display: block;
             }   
@@ -650,66 +664,7 @@ footer {
 
 
 @media screen and (max-width:784px) {
-    .coment_section_content .coment {
-        flex-direction: column;
-        .coment_img {
-            width: 100%;
-        }
-        .text_bgc {
-            width: 100%;
-            .coment_text {
-                width: 100%;
-                line-height: -0.2px;
-            }
-        } 
-    }
-    .about_us_section {
-        padding-top: 60px;
-    }
-    .about_us_section_content {
-        flex-direction: column;
-        padding-bottom: 60px;
-        .about_us_section_description {
-            width: 100%;
-            padding-bottom: 50px;
-        }
-        .about_us_section_images {
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100%;
-            .abbout_us_section_image_1 {
-                margin-bottom: 0;
-                padding-bottom: 20px;
-                padding-left: 0 ;
-                width: 100%;
-                img {
-                    width: 100%;
-                    max-width: 320px;
-                }
-            }
-            .abbout_us_section_image_2 {
-                padding-left: 0;
-                width: 100%;
-                display: flex;
-                img {
-                    width: 100%;
-                    max-width: 320px;
-                }
-            }
-        }
-    }
-    .curort_section {
-        padding: 80px 0;
-    }
-    footer {
-        padding-top: 30px;
-    }
-    .footer_content {
-        padding-bottom: 30px;
-    }
-    .curort_section_card {
-        width: 85%;
-    }
+    //=============header
     .header .nav_list {
         display: none;
     }
@@ -727,23 +682,127 @@ footer {
     .header {
         height: 60px;
     }
+
+    //=======================
+    //========about_section==============
+
+    .about_us_section {
+        padding-top: 60px;
+    }
+    .about_us_section_content {
+        flex-direction: column;
+        padding-bottom: 60px;
+        .about_us_section_description {
+            width: 100%;
+            padding-bottom: 50px;
+        }
+        .about_us_section_images {
+            flex-direction: row ;
+            justify-content: space-between;
+            width: 100%;
+            .about_us_section_image_1 {
+                margin-bottom: 0;
+                padding-left: 0 ;
+                width: calc(50% - 15px);
+                img {
+                    width: 100%;
+                }
+            }
+            .about_us_section_image_2 {
+                padding-left: 0;
+                width: calc(50% - 15px);
+                display: flex;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //========================
+    //========steps_section==========
+
     .turns_section {
         padding-top: 90px;
     }
     .steps {
         padding-bottom: 90px;
     }
-    .coment_section_content {
-        padding-bottom: 80px;
+
+    //======================
+    //===========curort_section========
+    .curort_section {
+        padding: 80px 0;
     }
+    .curort_section_card {
+        width: 85%;
+    }
+    //================
+    //========coments_section=========
     .coments_section {
         padding-top: 80px;
     }
+    .coment_section_content {
+        padding-bottom: 80px;
+    }
+    .coment_section_content .coment {
+        flex-direction: column;
+        .coment_img {
+            width: 100%;
+        }
+        .text_bgc {
+            width: 100%;
+            .coment_text {
+                width: 100%;
+                letter-spacing: -0.2px;
+            }
+        } 
+    }
+    //==========
+    //====footer==========
+    footer {
+        padding-top: 30px;
+    }
+    .footer_content {
+        padding-bottom: 30px;
+    }
+    //==================
+
 }
+
+
+
+    
+
+
+
 
 @media screen and (max-width:700px) {
     .curort_section_card {
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .about_us_section_content .about_us_section_images {
+        width: 100%;
+        flex-direction: column;
+        .about_us_section_image_1 {
+            width: 100%;
+            padding-bottom: 0;
+            margin-bottom: 30px;
+            img {
+                max-width: 320px;
+            }
+        }
+        .about_us_section_image_2 {
+            width: 100%;
+            flex-direction: row-reverse;
+            img {
+                max-width: 320px;
+            }
+        }
     }
 }
 
