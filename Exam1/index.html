@@ -105,12 +105,12 @@
             </div>
 
         </section>
-       <!-- <section class="turns_section">
+ <section class="turns_section">
             
             <div class="container">
 
                     <ul class="steps">
-                        <li class="step">
+                        <li class="step ">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -122,8 +122,8 @@
                                 Search Places
                             </div>
                         </li>
-                        <li class="step step_center">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                        <li class="step   step_center">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewbox="0 0 32 32">
                                 <g id="icomoon-ignore">
                                 </g>
                                 <path d="M16 2.672c-7.361 0-13.328 5.967-13.328 13.328s5.968 13.328 13.328 13.328c7.361 0 13.328-5.967 13.328-13.328s-5.967-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#ff6363"></path>
@@ -133,7 +133,7 @@
                                 Select Places
                             </div>
                         </li>
-                        <li class="step">
+                        <li class="step ">
                             <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -151,7 +151,7 @@
             </div>
 
         </section>
-        -->
+
         <section class="curort_section curort_section-left">
             <div class="container">
                 <div class="curort_card_position">
@@ -248,8 +248,16 @@
     </footer>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-        <script>
+        <script>     
             $(function() {
+                $(window) .on('scroll' , function(){
+                    console.log($(window).scrollTop());
+                    if($(window).scrollTop()>740){
+                        $("header") .addClass("fixed");
+                    }else {
+                        $("header") .removeClass("fixed");
+                    }
+                });
                 $(".hamburger, #menu_shadow").on('click' , function(){
                     $("body").toggleClass("open");
                 });

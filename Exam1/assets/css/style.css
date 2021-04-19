@@ -270,6 +270,18 @@ header {
   width: 100%;
   background-color: #5474fd;
   height: 80px;
+  transition: all 0.3s ease-in;
+  z-index: 100;
+}
+header.fixed {
+  height: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+header.fixed .container .header {
+  height: 60px;
 }
 
 .header {
@@ -386,15 +398,44 @@ header {
 
 .steps {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 114px;
 }
 .steps .step {
   text-align: center;
+  width: 33.3333%;
+  text-align: center;
+  position: relative;
+}
+.steps .step.step_center::before {
+  content: "";
+  position: absolute;
+  height: 60px;
+  background-image: url(../images/way.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: -50%;
+  top: -60px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 10;
+}
+.steps .step.step_center::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  background-image: url(../images/way.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 50%;
+  top: -60px;
+  width: 100%;
+  background-color: transparent;
 }
 .steps .step svg {
-  width: 62px;
-  height: 62px;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
 }
 .steps .step .step_discription {
   font-family: "Aleo";
@@ -577,6 +618,28 @@ footer {
     width: 70%;
   }
 }
+@media screen and (max-width: 820px) {
+  .steps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps .step {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .steps .step.step_center::before {
+    content: none;
+  }
+  .steps .step.step_center::after {
+    content: none;
+  }
+  .steps .step:last-child {
+    padding-bottom: 0;
+  }
+}
 @media screen and (max-width: 784px) {
   .coment_section_content .coment {
     flex-direction: column;
@@ -598,6 +661,7 @@ footer {
 
   .about_us_section_content {
     flex-direction: column;
+    padding-bottom: 60px;
   }
   .about_us_section_content .about_us_section_description {
     width: 100%;
@@ -629,11 +693,15 @@ footer {
   }
 
   .curort_section {
-    padding-top: 150px;
+    padding: 80px 0;
   }
 
   footer {
-    padding-top: 60px;
+    padding-top: 30px;
+  }
+
+  .footer_content {
+    padding-bottom: 30px;
   }
 
   .curort_section_card {
@@ -649,20 +717,37 @@ footer {
   }
 
   header {
+    height: 60px;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 20;
     box-shadow: 0 2px 2px rgba(228, 223, 223, 0.5);
   }
+
+  .header {
+    height: 60px;
+  }
+
+  .turns_section {
+    padding-top: 90px;
+  }
+
+  .steps {
+    padding-bottom: 90px;
+  }
+
+  .coment_section_content {
+    padding-bottom: 80px;
+  }
+
+  .coments_section {
+    padding-top: 80px;
+  }
 }
 @media screen and (max-width: 700px) {
   .curort_section_card {
     width: 100%;
-  }
-
-  .coment_section_content {
-    padding-bottom: 113px;
   }
 }
 @media screen and (max-width: 464px) {
