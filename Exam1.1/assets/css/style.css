@@ -290,6 +290,7 @@ header.fixed .container .header {
   justify-content: space-between;
   height: 80px;
   align-items: center;
+  transition: all 0.3s ease-in;
 }
 .header .nav_list {
   list-style: none;
@@ -299,6 +300,7 @@ header.fixed .container .header {
   justify-content: space-around;
   width: 100%;
   padding-left: 30px;
+  transition: all 0.3s ease-in;
 }
 .header .nav_list li {
   display: inline-block;
