@@ -282,7 +282,7 @@ main {
 
 h1 {
     font-size: 60px;
-    font-weight: 900;
+    font-weight: bold;
     color: #262626;
 }
 
@@ -514,6 +514,7 @@ main {
     padding-bottom: 40px;
     .block_name_h2 {
         padding-bottom: 30px;
+        color: #262626;
     }
     .gallery_section_subtitle {
         font-size: 17px;
@@ -528,7 +529,8 @@ main {
         justify-content: space-between;
         width: 100%;
         .big {
-        width: calc(67% - 15px);
+            box-shadow: 4px 4px 10px rgba(0,0,0, 0.5);
+            width: calc(67% - 15px);
 
         }
         .little_blocks {
@@ -537,6 +539,9 @@ main {
             justify-content: space-between;
             align-items: center;
             width: calc(33% - 15px);
+            .little {
+                box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+            }
         }    
     }
     .second_block {
@@ -544,6 +549,7 @@ main {
         justify-content: space-between;
         .standart {
             width: calc(50% - 15px);
+            box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
         }
     } 
 }

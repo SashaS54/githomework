@@ -291,7 +291,7 @@ main {
 
 h1 {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: bold;
   color: #262626;
 }
 
@@ -522,6 +522,7 @@ main {
 }
 .gallery_section_title .block_name_h2 {
   padding-bottom: 30px;
+  color: #262626;
 }
 .gallery_section_title .gallery_section_subtitle {
   font-size: 17px;
@@ -538,6 +539,7 @@ main {
   width: 100%;
 }
 .gallery_section_images_list .first_block .big {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   width: calc(67% - 15px);
 }
 .gallery_section_images_list .first_block .little_blocks {
@@ -547,12 +549,16 @@ main {
   align-items: center;
   width: calc(33% - 15px);
 }
+.gallery_section_images_list .first_block .little_blocks .little {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 .gallery_section_images_list .second_block {
   display: flex;
   justify-content: space-between;
 }
 .gallery_section_images_list .second_block .standart {
   width: calc(50% - 15px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .subscribe_section {
