@@ -44,20 +44,15 @@ function time() {
 
 }
 */
-/*
-function middleNumber() {
-    let x = parsentInt(prompt("Enter number"));
-    let rez = parseInt((x % 100) / 10);
-    alert(`${x} second char ${rez}`);
 
-}
+
 
 function lastToFirst() {
     let number = parseInt(prompt("Enter number")),
         rez = (number%10*100000)+ parseInt(number/10);
         alert(`Move ur last char to front ${number} => ${rez}`)
 }
-*/
+
 function zarplata() {
     let number = parseFloat(prompt("Enter number"));
     const baza = 250;
