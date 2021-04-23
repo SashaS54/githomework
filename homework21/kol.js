@@ -26,7 +26,7 @@ function Age() {
 function findPsquare() {
     let L = prompt("Enter side length") ;
     if (L != '' ) {
-        if(isNaN(L)){
+        if(isNaN(L) ||  L <= 0){
             alert ("enter corect lenght");
         }else {
             let P = (Math.floor(L*100)/100)*4;
@@ -40,7 +40,7 @@ function findPsquare() {
 function findPcircle() {
     let R = prompt("Enter Radius");
     if (R != '') {
-        if(isNaN(R)){
+        if(isNaN(R) || R < 0){
             alert("not valid radius")
         }else {
             const pi = Math.PI;  //Я ЗНАЮ ЧТО МОЖНО БЕЗ ОБЬЯВЛЕНИЯ КОНСТАНТЫ ИСПОЛЬЗОВАТЬ MATH.PI, НО ТАК ДЛЯ ЗАДАНИЯ НУЖНО
@@ -184,16 +184,38 @@ function who_are_you () {
 }   
 
 function symbole () {
-    let money = parseFloat(prompt("How much"));
-    if (money != '') {
-        if (money > 0) {
-            const procent = 0.05;
-            let suma = ((money * procent) + money) + (money + (money*procent))*procent; 
-            alert (suma);
-        }else {
+    debugger
+    let number = prompt("enter number from 0 to 9"),
+        check = Math.floor(number) / number ;
+    if (number != '') {
+        if (number < 0 > 9 && (check != 1)) {
             alert("please enter corect values");
-        }
+            }else if  (number == 1) {
+                alert ("!");
+            }else if  (number == 2) {
+                alert ("@");
+            }else if  ( number == 3) {
+                alert ("#")
+            }else if  (number == 4) {
+                alert ("$");
+            }else if  (number == 5) {
+                alert ("%");
+            }else if  (number == 6) {
+                alert ("^")
+            }else if  (number == 7) {
+                alert ("&");
+            }else if  (number == 8) {
+                alert("*")
+            }else if  (number == 9) {
+                alert("(");
+            }else if  (number == 0) {
+                alert(")");
+            }else {
+                alert ("invalid number")
+            }
     }else {
-        alert("You didnt enter values");
+        alert("You didnt enter number");
     }
 }
+
+
