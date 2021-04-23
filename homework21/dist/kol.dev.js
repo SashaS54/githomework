@@ -197,7 +197,6 @@ function who_are_you() {
 }
 
 function symbole() {
-  debugger;
   var number = prompt("enter number from 0 to 9"),
       check = Math.floor(number) / number;
 
@@ -226,6 +225,85 @@ function symbole() {
       alert(")");
     } else {
       alert("invalid number");
+    }
+  } else {
+    alert("You didnt enter number");
+  }
+}
+
+function check() {
+  var number = prompt("enter number"),
+      check = Math.floor(number) / number;
+
+  if (number != '') {
+    if (number < 101 && number > 999 && check != 1) {
+      alert("please enter corect values");
+    } else {
+      var n100 = Math.floor(number * 0.01),
+          n10 = Math.floor(0.1 * (number % 100)),
+          n1 = number % 10;
+
+      if (n100 != n10 && n10 != n1 && n1 != n100) {
+        alert("no");
+      } else {
+        alert("yea");
+      }
+    }
+  } else {
+    alert("You didnt enter number");
+  }
+}
+
+function visokosnij() {
+  var number = prompt("enter year"),
+      qloor = Math.floor(number) / number;
+
+  if (number != '') {
+    if (number > 1 && qloor === 1) {
+      var proverka = number % 4;
+
+      if (proverka != 0) {
+        alert("obichnij");
+      } else {
+        alert("visokosnij");
+      }
+    } else {
+      alert("not valid year");
+    }
+  } else {
+    alert("You didnt enter number");
+  }
+}
+
+function palindrom() {
+  var number = prompt("enter number"),
+      floor = Math.floor(number) / number;
+
+  if (number != '') {
+    if (number >= 10000 && number <= 99999 && floor === 1) {
+      var n1 = Math.floor(number * 0.0001),
+          n10 = Math.floor(number % 10000 * 0.001),
+          n1000 = Math.floor(number % 100 * 0.1),
+          n10000 = number % 10;
+
+      if (n1 === n10000 && n10 === n1000) {
+        alert("palindrom");
+      } else {
+        alert("not palindrom");
+      }
+    } else if (number >= -99999 && number <= -1000 && floor === 1) {
+      var _n = Math.floor(number * 0.0001),
+          _n2 = Math.floor(number % 10000 * 0.001),
+          _n3 = Math.floor(number % 100 * 0.1),
+          _n4 = number % 10;
+
+      if (_n === _n4 && _n2 === _n3) {
+        alert("palindrom");
+      } else {
+        alert("not palindrom");
+      }
+    } else {
+      alert("not valid number");
     }
   } else {
     alert("You didnt enter number");
