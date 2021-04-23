@@ -31,7 +31,7 @@ function findPsquare() {
   var L = prompt("Enter side length");
 
   if (L != '') {
-    if (isNaN(L)) {
+    if (isNaN(L) || L <= 0) {
       alert("enter corect lenght");
     } else {
       var P = Math.floor(L * 100) / 100 * 4;
@@ -46,7 +46,7 @@ function findPcircle() {
   var R = prompt("Enter Radius");
 
   if (R != '') {
-    if (isNaN(R)) {
+    if (isNaN(R) || R < 0) {
       alert("not valid radius");
     } else {
       var pi = Math.PI; //Я ЗНАЮ ЧТО МОЖНО БЕЗ ОБЬЯВЛЕНИЯ КОНСТАНТЫ ИСПОЛЬЗОВАТЬ MATH.PI, НО ТАК ДЛЯ ЗАДАНИЯ НУЖНО
@@ -197,17 +197,37 @@ function who_are_you() {
 }
 
 function symbole() {
-  var money = parseFloat(prompt("How much"));
+  debugger;
+  var number = prompt("enter number from 0 to 9"),
+      check = Math.floor(number) / number;
 
-  if (money != '') {
-    if (money > 0) {
-      var procent = 0.05;
-      var suma = money * procent + money + (money + money * procent) * procent;
-      alert(suma);
-    } else {
+  if (number != '') {
+    if (number < 0 > 9 && check != 1) {
       alert("please enter corect values");
+    } else if (number == 1) {
+      alert("!");
+    } else if (number == 2) {
+      alert("@");
+    } else if (number == 3) {
+      alert("#");
+    } else if (number == 4) {
+      alert("$");
+    } else if (number == 5) {
+      alert("%");
+    } else if (number == 6) {
+      alert("^");
+    } else if (number == 7) {
+      alert("&");
+    } else if (number == 8) {
+      alert("*");
+    } else if (number == 9) {
+      alert("(");
+    } else if (number == 0) {
+      alert(")");
+    } else {
+      alert("invalid number");
     }
   } else {
-    alert("You didnt enter values");
+    alert("You didnt enter number");
   }
 }
