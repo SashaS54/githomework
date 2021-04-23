@@ -168,9 +168,46 @@ function bank() {
       var suma = money * procent + money + (money + money * procent) * procent;
       alert(suma);
     } else {
-      alert("enter corect values");
+      alert("please enter corect values");
     }
   } else {
     alert("You didnt enter values");
   }
 } //==================================================================homework 2============================================================================
+
+
+function who_are_you() {
+  var age = prompt("How old are you&");
+
+  if (age != '') {
+    if (age >= 0 && age <= 12) {
+      alert("You are child");
+    } else if (age > 12 && age < 18) {
+      alert(" You are teenager");
+    } else if (age > 18 && age < 60) {
+      alert(" You are adult");
+    } else if (age > 60) {
+      alert(" You are oldman");
+    } else {
+      alert("not valid number");
+    }
+  } else {
+    alert("You didnt enter values");
+  }
+}
+
+function symbole() {
+  var money = parseFloat(prompt("How much"));
+
+  if (money != '') {
+    if (money > 0) {
+      var procent = 0.05;
+      var suma = money * procent + money + (money + money * procent) * procent;
+      alert(suma);
+    } else {
+      alert("please enter corect values");
+    }
+  } else {
+    alert("You didnt enter values");
+  }
+}
