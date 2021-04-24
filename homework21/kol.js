@@ -233,6 +233,7 @@ function check () {
                     alert ("yea");
                 }
         }
+        
     }else {
         alert("You didnt enter number");
     }
@@ -288,7 +289,4 @@ function palindrom() {
             alert("You didnt enter number")
     }
 }
-
-
-
 
