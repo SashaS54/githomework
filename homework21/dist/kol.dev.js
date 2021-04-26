@@ -203,28 +203,54 @@ function symbole() {
   if (number != '') {
     if (number < 0 > 9 && check != 1) {
       alert("please enter corect values");
-    } else if (number == 1) {
-      alert("!");
-    } else if (number == 2) {
-      alert("@");
-    } else if (number == 3) {
-      alert("#");
-    } else if (number == 4) {
-      alert("$");
-    } else if (number == 5) {
-      alert("%");
-    } else if (number == 6) {
-      alert("^");
-    } else if (number == 7) {
-      alert("&");
-    } else if (number == 8) {
-      alert("*");
-    } else if (number == 9) {
-      alert("(");
-    } else if (number == 0) {
-      alert(")");
     } else {
-      alert("invalid number");
+      switch (number) {
+        case "1":
+          nSymbole = "!";
+          break;
+
+        case "2":
+          nSymbole = "@";
+          break;
+
+        case "3":
+          nSymbole = "#";
+          break;
+
+        case "4":
+          nSymbole = "$";
+          break;
+
+        case "5":
+          nSymbole = "%";
+          break;
+
+        case "6":
+          nSymbole = "^";
+          break;
+
+        case "7":
+          nSymbole = "&";
+          break;
+
+        case "8":
+          nSymbole = "*";
+          break;
+
+        case "9":
+          nSymbole = "(";
+          break;
+
+        case "0":
+          nSymbole = ")";
+          break;
+
+        default:
+          nSymbole = "Not valid number";
+          break;
+      }
+
+      alert(nSymbole);
     }
   } else {
     alert("You didnt enter number");
@@ -260,13 +286,8 @@ function visokosnij() {
 
   if (number != '') {
     if (number > 1 && qloor === 1) {
-      var proverka = number % 4;
-
-      if (proverka != 0) {
-        alert("obichnij");
-      } else {
-        alert("visokosnij");
-      }
+      var proverka = number % 4 == 0 ? "visokosnij" : "obichnij";
+      alert(proverka);
     } else {
       alert("not valid year");
     }
@@ -284,24 +305,9 @@ function palindrom() {
       var n1 = Math.floor(number * 0.0001),
           n10 = Math.floor(number % 10000 * 0.001),
           n1000 = Math.floor(number % 100 * 0.1),
-          n10000 = number % 10;
-
-      if (n1 === n10000 && n10 === n1000) {
-        alert("palindrom");
-      } else {
-        alert("not palindrom");
-      }
-    } else if (number >= -99999 && number <= -1000 && floor === 1) {
-      var _n = Math.floor(number * 0.0001),
-          _n2 = Math.floor(number % 10000 * 0.001),
-          _n3 = Math.floor(number % 100 * 0.1),
-          _n4 = number % 10;
-
-      if (_n === _n4 && _n2 === _n3) {
-        alert("palindrom");
-      } else {
-        alert("not palindrom");
-      }
+          n10000 = number % 10,
+          rez = n1 == n10000 && n10 == n1000 ? "yes" : "no";
+      alert(rez);
     } else {
       alert("not valid number");
     }
@@ -309,3 +315,399 @@ function palindrom() {
     alert("You didnt enter number");
   }
 }
+
+function conventor2() {
+  var bucks = prompt("enter soum in $"),
+      currency = prompt("`chose 1 type of currency ( UAH , AZN, EUR)`");
+
+  if (bucks != "" && currency != "") {
+    var EUR = 1.2,
+        AZN = 0.9,
+        // na randome 
+    UAH = 0.08;
+
+    if (bucks > 0 && currency === "UAH") {
+      var convent = bucks * UAH;
+      alert(convent);
+    } else if (bucks > 0 && currency === "AZN") {
+      var _convent = bucks * AZN;
+
+      alert(_convent);
+    } else if (bucks > 0 && currency === "EUR") {
+      var _convent2 = bucks * EUR;
+
+      alert(_convent2);
+    } else {
+      alert("not valid number");
+    }
+  } else {
+    alert("zapolni");
+  }
+}
+
+function sale() {
+  var cost = prompt("enter cost in $");
+
+  if (cost != "") {
+    if (cost >= 200 && cost < 300) {
+      var procent = 0.03;
+      var rez = cost + cost * procent;
+      alert(rez);
+    } else if (cost > 300 && cost < 500) {
+      var _procent = 0.05;
+
+      var _rez = cost + cost * _procent;
+
+      alert(_rez);
+    } else if (cost > 500) {
+      var _procent2 = 0.07;
+
+      var _rez2 = cost + cost * _procent2;
+
+      alert(_rez2);
+    } else {
+      alert("not valid number");
+    }
+  } else {
+    alert("zapolni");
+  }
+}
+
+function square2() {
+  debugger;
+  var lenght = parseFloat(prompt("enter lenth")),
+      P = parseFloat(prompt("enter lenth"));
+
+  if (!isNaN(lenght) || !isNaN(P)) {
+    if (P > 0 && lenght > 0) {
+      var R = lenght / Math.PI,
+          LS = P / 4,
+          rez = R == LS ? "YES" : "NO";
+      alert(rez);
+    } else {
+      alert("not valid number");
+    }
+  } else {
+    alert("zapolni");
+  }
+}
+
+function question() {
+  var firstQ = parseFloat(prompt("2+2=?")),
+      secondQ = parseFloat(prompt("2+6=?")),
+      thirdQ = parseFloat(prompt("2+54=?"));
+
+  if (!isNaN(firstQ) || !isNaN(secondQ) || !isNaN(thirdQ)) {
+    var firstAnsver, secondAnsver, thirdAnsver;
+
+    if (firstQ = 4) {
+      firstAnsver = 2;
+    } else {
+      firstAnsver = 0;
+    }
+
+    if (secondQ = 8) {
+      secondAnsver = 2;
+    } else {
+      secondAnsver = 0;
+    }
+
+    if (thirdQ = 56) {
+      thirdAnsver = 2;
+    } else {
+      thirdAnsver = 0;
+    }
+
+    var rez = thirdAnsver + secondAnsver + firstAnsver;
+    alert(rez);
+  } else {
+    alert("zapolni");
+  }
+}
+
+function yearq() {
+  var date = prompt("Enter date day/month/year");
+  var arrT = date.split("/"),
+      d = parseInt(arrT[0]),
+      m = parseInt(arrT[1]),
+      y = parseInt(arrT[2]),
+      z = 1,
+      vis = y % 4,
+      day = d + 1;
+
+  if (d !== '' || m != '' || y != "") {
+    if (d > 0 && m > 0 && m < 13 && y > 0) {
+      switch (m) {
+        case 1:
+          if (day > 31) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 2:
+          if (day > 29 && vis == 0) {
+            m = m + 1;
+            day = 1;
+
+            if (day > 30) {
+              z = z + 1;
+            }
+          } else if (day > 28) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 29) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 3:
+          if (day > 31) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 32) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 4:
+          if (day > 30) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 5:
+          if (day > 30) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 6:
+          if (day > 30) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 7:
+          if (day > 31) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 32) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 8:
+          if (day > 29) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 30) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 9:
+          if (day > 30) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 10:
+          if (day > 31) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 32) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 11:
+          if (day > 30) {
+            m = m + 1;
+            day = 1;
+          } else if (day > 31) {
+            z = z + 1;
+          }
+
+          break;
+
+        case 12:
+          if (day > 31) {
+            m = 1;
+            day = 1;
+            y = y + 1;
+          } else if (day > 32) {
+            z = z + 1;
+          }
+
+          break;
+      }
+
+      if (z == 2) {
+        alert("not VALID DATE");
+      } else {
+        var rez = "".concat(day, "/").concat(m, "/").concat(y);
+        alert(rez);
+      }
+    } else {
+      alert("not VALID DATE");
+    }
+  } else {
+    alert("zapolni");
+  }
+}
+/*
+
+function go () {
+    let number = parseInt(prompt("enter number")),
+        rez = addZero(number);
+    alert (rez);
+}
+
+function addZero(n) {
+    return n < 10?"0" + n:n;
+}
+
+
+function text () {
+    const t = document.getElementById("my_text").value;
+    //document.getElementById ("text_rez"). innerHTML = 'hello, ' + t + "!"
+    document.getElementById("text_rez").innerHTML = `
+    <p>
+        Welcome!<br>
+        Hello, <b>${t}</b>!
+    <p>
+    `;
+}
+
+
+function diez() {
+    const n = parseInt(document.getElementById("diez_number").value);
+    if(n!=0 && !isNaN(n) && n>0) {
+        let rez = '';
+        let i = 0;
+        while(i<n) {
+            i++;
+            //rez = rez + '#';
+            rez += '#';
+        }
+        document.getElementById("diez_rez").innerText = rez;
+    }else {
+        alert("enter diez number!")
+    }
+}
+
+function reverse() {
+    let n = parseInt(document.getElementById("reverse_number").value);
+    if(n!=0 && ! isNaN(n) && n>0) {
+        let rez = '';
+        while(n>0) {
+            rez += n+`, `;
+            n--;
+        }
+        document.getElementById("reverse_rez").innerText = rez;
+    }else {
+        alert("enter diez number!")
+    }
+}
+
+
+
+/*
+function pow() {
+    let n = parseInt(document.getElementById("pow_number").value);
+    let s = parseInt(document.getElementById("pow_stepen").value);
+    let valid = true;
+    let errMsg = ''
+    if(!isNaN(n)) {
+        errMsg += "enter number";
+        valid = false;
+    }
+    if(!isNaN(s)) {
+        errMsg += "enter stepen";
+        valid = false;
+    if(valid) {
+        if (s>0){
+        }else {
+            let rez = n;
+            let i = 1;
+            while(i<s){
+               rez = rez * n;
+                i++            
+        }
+        document.getElementById("reverse_rez").innerText = rez;
+    }else {
+        document.getElementById("reverse_rez").innerHTML = `<span class="color-danger">${errMsg}</span>`;
+    
+}
+
+
+function del() {
+    let a = parseInt(document.getElementById("del_number1").value);
+    let b = parseInt(document.getElementById("del_number2").value);
+    let rez = '';
+
+    let max = (a>b)?a:b;
+
+    while(max!=0){
+        if(a%max==0) {
+            rez += max+ ', '
+        }
+        max--;
+    }
+
+    document.getElementById("del_rez").innerText = rez;
+    
+}
+
+function primer () {
+    const result = 6;
+    let answer = 0 ;
+    let rez = true;
+    do {
+        answer = parseInt(prompt("2 + 2 * 2 = ?"))
+        if(answer===result) {
+            alert("good")
+            rez = true;
+        }else {
+            alert("answer is incorect");
+            rez = false;
+        }
+    } while(!rez);
+}
+
+
+function krat() {
+    const k = parseInt(document.getElementById("krat_number").value);
+    let rez = '';
+    for (let i=1; i<=100; i++) {
+        if (i%k==0) {
+            rez += i + ' ,';
+        }
+    } 
+}
+*/
