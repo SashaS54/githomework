@@ -454,16 +454,14 @@ function yearq() {
             m = m + 1;
             day = 1;
 
-            if (day > 30) {
+            if (day > 30 && vis === 0) {
               z = z + 1;
             }
           } else if (day == 29 && vis != 0) {
             m = m + 1;
             day = 1;
-          } else if (day > 29 && vis == 0) {
+          } else if (day > 29 && vis !== 0) {
             z = z + 1;
-          } else if (day === 29 && vis == 0) {
-            m = m;
           }
 
           break;
