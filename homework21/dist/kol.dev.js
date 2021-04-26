@@ -426,6 +426,7 @@ function question() {
 }
 
 function yearq() {
+  debugger;
   var date = prompt("Enter date day/month/year");
   var arrT = date.split("/"),
       d = parseInt(arrT[0]),
@@ -439,7 +440,7 @@ function yearq() {
     if (d > 0 && m > 0 && m < 13 && y > 0) {
       switch (m) {
         case 1:
-          if (day > 31) {
+          if (day = 31) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -449,14 +450,14 @@ function yearq() {
           break;
 
         case 2:
-          if (day > 29 && vis == 0) {
+          if (day = 29 && vis == 0) {
             m = m + 1;
             day = 1;
 
             if (day > 30) {
               z = z + 1;
             }
-          } else if (day > 28) {
+          } else if (day = 28) {
             m = m + 1;
             day = 1;
           } else if (day > 29) {
@@ -466,7 +467,7 @@ function yearq() {
           break;
 
         case 3:
-          if (day > 31) {
+          if (day = 31) {
             m = m + 1;
             day = 1;
           } else if (day > 32) {
@@ -476,7 +477,7 @@ function yearq() {
           break;
 
         case 4:
-          if (day > 30) {
+          if (day = 30) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -486,7 +487,7 @@ function yearq() {
           break;
 
         case 5:
-          if (day > 30) {
+          if (day = 30) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -496,7 +497,7 @@ function yearq() {
           break;
 
         case 6:
-          if (day > 30) {
+          if (day = 30) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -506,7 +507,7 @@ function yearq() {
           break;
 
         case 7:
-          if (day > 31) {
+          if (day = 31) {
             m = m + 1;
             day = 1;
           } else if (day > 32) {
@@ -516,7 +517,7 @@ function yearq() {
           break;
 
         case 8:
-          if (day > 29) {
+          if (day = 29) {
             m = m + 1;
             day = 1;
           } else if (day > 30) {
@@ -526,7 +527,7 @@ function yearq() {
           break;
 
         case 9:
-          if (day > 30) {
+          if (day = 30) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -536,7 +537,7 @@ function yearq() {
           break;
 
         case 10:
-          if (day > 31) {
+          if (day = 31) {
             m = m + 1;
             day = 1;
           } else if (day > 32) {
@@ -546,7 +547,7 @@ function yearq() {
           break;
 
         case 11:
-          if (day > 30) {
+          if (day = 30) {
             m = m + 1;
             day = 1;
           } else if (day > 31) {
@@ -556,7 +557,7 @@ function yearq() {
           break;
 
         case 12:
-          if (day > 31) {
+          if (day = 31) {
             m = 1;
             day = 1;
             y = y + 1;
