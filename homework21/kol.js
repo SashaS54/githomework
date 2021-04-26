@@ -394,7 +394,7 @@ function yearq() {
         z = 1,
         vis = y%4,
         day = d+1;
-    if (d !== '' || (m != '' )|| (y != "")) {
+    if (!isNaN(d) || !isNaN(m)|| !isNaN(y)) {
         if (d>0 && m>0 && m<13 && y>0) {
             switch(m){ 
                 case 1 :
