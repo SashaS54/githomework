@@ -201,7 +201,7 @@ function symbole() {
       check = Math.floor(number) / number;
 
   if (number != '') {
-    if (number < 0 > 9 && check != 1) {
+    if (number < 0 && number > 9 && check != 1) {
       alert("please enter corect values");
     } else {
       switch (number) {
