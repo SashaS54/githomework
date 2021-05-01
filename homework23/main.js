@@ -190,4 +190,3 @@ function tablica() {
 }
 
 
-function ugadal();
