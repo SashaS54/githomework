@@ -105,7 +105,7 @@ function statistika() {
 
 function calc() {
   do {
-    var number = prompt("Введите 2 числа и знак между ними  (number_znak_number)  "),
+    var number = prompt("Введите 2 числа и знак между ними  (number znak number)  "),
         arrT = number.split(" "),
         _rez2 = void 0,
         a = parseFloat(arrT[0]),
