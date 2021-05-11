@@ -1,12 +1,14 @@
 "use strict";
 
 function suma() {
-  var a = document.getElementById("suma_number1").value,
-      b = document.getElementById("suma_number2").value,
+  debugger;
+  var a = parseInt(document.getElementById("suma_number1").value),
+      b = parseInt(document.getElementById("suma_number2").value),
       rez = 0;
 
-  for (var i = a; i <= b; i++) {
-    rez += parseInt(i);
+  while (b > a) {
+    rez = rez + b;
+    b--;
   }
 
   document.getElementById("suma_rez").innerText = rez;
@@ -137,7 +139,8 @@ function zdvig() {
   var a = parseInt(document.getElementById("zdvig_number").value),
       //12345
   i = 0,
-      z = a;
+      z = a,
+      k = parseInt(document.getElementById("zdvig_kol").value);
 
   while (z >= 1) {
     z = z / 10;
@@ -146,8 +149,7 @@ function zdvig() {
 
   var first = parseInt(10 * a / Math.pow(10, i));
   var second = (parseInt(100 * a / Math.pow(10, i)) - first * 10) * 10;
-  123456;
-  var chast = (a - parseInt(a / Math.pow(10, i - 2)) * Math.pow(10, i - 2)) * 100 + second + first;
+  var chast = (a - parseInt(a / Math.pow(10, i - k)) * Math.pow(10, i - k)) * 100 + second + first;
   alert(chast);
 }
 
