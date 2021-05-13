@@ -36,53 +36,58 @@ var drobs = {
   dobavlenie: function dobavlenie() {},
   suma: function suma() {
     debugger;
-    this.drob.ch = this.drob1.ch1 * this.drob2.z + this.drob2.ch2 * this.drob1.z;
+    this.drob.ch = this.drob1.ch1 * this.drob2.z2 + this.drob2.ch2 * this.drob1.z1;
     this.drob.z = this.drob1.z1 * this.drob2.z2;
   },
   raznica: function raznica() {
-    ch = drobs.drob1["ch"] * drobs.drob2["z"] - drobs.drob2["ch"] * drobs.drob1["z"];
-    z = drobs.drob1["z"] * drobs.drob2["z"];
-    return ch, z;
+    debugger;
+    this.drob.ch = this.drob1.ch1 * this.drob2.z2 - this.drob2.ch2 * this.drob1.z1;
+    this.drob.z = this.drob1.z1 * this.drob2.z2;
   },
   delenie: function delenie() {
-    ch = drobs.drob1["ch"] * drobs.drob2["z"];
-    z = drobs.drob2["ch"] * drobs.drob1["z"];
-    return ch, z;
+    this.drob.ch = this.drob1.ch1 * this.drob2.z2;
+    this.drob.z = this.drob2.ch2 * this.drob1.z1;
   },
   umnozenie: function umnozenie() {
-    ch = drobs.drob1["ch"] * drobs.drob2["ch"];
-    z = drobs.drob1["z"] * drobs.drob2["z"];
-    return ch, z;
+    this.drob.ch = this.drob1.ch1 * this.drob2.ch2;
+    this.drob.z = this.drob2.z2 * this.drob1.z1;
   },
   sokrashenie: function sokrashenie() {
+    del();
     drobs.drob.ch = drobs.drob.ch / drobs.drob.dl;
     drobs.drob.z = drobs.drob.z / drobs.drob.dl;
   },
   dobavit: function dobavit() {
+    debugger;
     this.drob1.ch1 = parseInt(document.getElementById("ch1").value);
     this.drob1.z1 = parseInt(document.getElementById("z1").value);
     this.drob2.ch2 = parseInt(document.getElementById("ch2").value);
     this.drob2.z2 = parseInt(document.getElementById("z2").value);
-    this.drob.znak = parseInt(document.getElementById("znak").value);
+    this.drob.znak = document.getElementById("znak").value;
   },
   dejstvie: function dejstvie() {
     debugger;
     drobs.dobavit();
 
-    if (this.drob.znak = "+") {
+    if (drobs.drob.znak == "+") {
       drobs.suma();
-    } else if (this.drob.znak = "-") {
-      drobs.delenie();
-    } else if (this.drob.znak = "*") {
+    }
+
+    if (drobs.drob.znak == "-") {
+      drobs.raznica();
+    }
+
+    if (drobs.drob.znak == "*") {
       drobs.umnozenie();
-    } else if (this.drob.znak = "/") {
+    }
+
+    if (drobs.drob.znak == "/") {
       drobs.delenie();
     }
 
-    var ch = drobs.drob.ch;
-    var z = drobs.drob.z;
-    ch = document.getElementById("ch").value;
-    z = document.getElementById("z").value;
+    drobs.sokrashenie();
+    document.getElementById("ch").value = drobs.drob.ch;
+    document.getElementById("z").value = drobs.drob.z;
   }
 };
 
