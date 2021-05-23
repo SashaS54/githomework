@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="foo">
+    Lorem ipsum dolor sit amet consectetur adipisicing.
+</p>
+<ul>
+    <li>2</li>
+    <li id="el_li">3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+
+             
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            console.log($("#foo"));
+
+            console.log($("li"))
+
+
+            $("li").each(function(){
+                this.innerText = parseInt(this.innerText)* parseInt(this.innerText);
+            });
+
+            //$("li").css('color', 'red').css("font-weight", "700")
+            $("li").css({
+                'color':'green',
+                'font-weight':"100",
+                'font-size':"24px"
+            });
+
+            $("li").css("Color");
+
+            console.log($("#el_li").prev().text());          
+        });
+
+
+
+        function myAlert(text = '') {
+            let html = `
+            <div id="alert" style="display:flex; justify-content:center;align-items:center;background-color:rgba(0,0,0, 0.8);width:100%;position:fixded;">
+                <div style="padding:40px;background:white;box-shadow: 0 0 4px #efefef">
+                    <p>${text}</p>
+                    <div style="text-align:center">
+                        <buttont type="button" onclick="closeAlert()">ok</button>
+                    </div>
+                </div>
+            </div>
+            `;
+            if($("alert").length!=0){
+                $("#alert")
+            }
+            $("body").append(html);
+        }
+        function closeAlert() {
+            $("#alert").remove()
+        }
+        
+    </script>
+</body>
+</html>

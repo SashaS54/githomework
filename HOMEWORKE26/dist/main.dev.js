@@ -106,3 +106,64 @@ function del() {
 
   drobs.drob.dl = i;
 }
+
+var time = {
+  tm: {
+    h: 0,
+    m: 0,
+    s: 0
+  },
+  time: function time() {
+    debugger;
+    var h_get = parseInt(document.getElementById("addhour").value);
+    var m_get = parseInt(document.getElementById("addmin").value);
+    var s_get = parseInt(document.getElementById("addsec").value);
+
+    if (isNaN(h_get)) {
+      h_get = 0;
+    }
+
+    if (isNaN(m_get)) {
+      m_get = 0;
+    }
+
+    if (isNaN(s_get)) {
+      s_get = 0;
+    }
+
+    var h_sum = this.tm.h + h_get;
+    var m_sum = this.tm.m + m_get;
+    var s_sum = this.tm.s + s_get;
+    ms = parseInt(s_sum / 60);
+    m_sum = m_sum + ms;
+    s_sum = s_sum % 60;
+    hm = parseInt(m_sum / 60);
+    h_sum = h_sum + hm;
+    m_sum = m_sum % 60;
+    this.tm.h = h_sum;
+    this.tm.m = m_sum;
+    this.tm.s = s_sum;
+    var m_vivod = m_sum;
+    var s_vivod = s_sum;
+    var h_vivod = h_sum;
+
+    if (s_vivod < 10) {
+      s_vivod = "0" + s_vivod;
+    }
+
+    ;
+
+    if (m_vivod < 10) {
+      m_vivod = "0" + m_vivod;
+    }
+
+    ;
+    document.getElementById("time_rez").innerText = "".concat(h_vivod, "/").concat(m_vivod, "/").concat(s_vivod);
+  }
+};
+/*
+        m = m + parseInt(s/60);
+        s = s%60;
+        h = h + parseInt(m/60);
+        m = m%60;
+*/
