@@ -306,8 +306,19 @@ header {
   left: -22px;
   top: 1px;
 }
+.header nav .nav li a:hover {
+  color: #ad99fc;
+  transition: all 0.3s ease-in;
+}
+.header nav .nav li a:hover::before {
+  background-color: #ad99fc;
+  transition: all 0.3s ease-in;
+}
 .header nav .nav li .active::before {
   background-color: #fff;
+}
+.header nav .nav li .active:hover::before {
+  background-color: #ad99fc;
 }
 .header .socials_list {
   width: calc(15% - 15px);
@@ -558,10 +569,12 @@ header {
 
 .lSAction > .lSPrev {
   left: -32px;
+  top: 37%;
 }
 
 .lSAction > .lSNext {
   right: -32px;
+  top: 37%;
 }
 
 .letest_news_section_content {

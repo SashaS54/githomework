@@ -2,7 +2,7 @@
 let map;
 
 function printMap() {
-    map = L.map('map').setView([51.505, -0.09], 13);
+    map = L.map('map').setView([40.716912222196974, -74.00593036049936], 16);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -32,8 +32,9 @@ $(document).ready(function() {
         slideMargin:0,
         speed:400,
         auto:true,
-        pause:10000,
+        pause:5000,
         enableTouch:false,
+        loop:true,
         onSliderLoad: function() {
             $('#autoWidth').removeClass('cS-hidden');
         } 
@@ -43,10 +44,11 @@ $(document).ready(function() {
   $(document).ready(function() {
     $('#slider_letest_news').lightSlider({
         item:3,
+        loop:true,
         slideMargin:20,
         speed:400,
         auto:true,
-        pause:10000,
+        pause:5000,
         responsive : [
             {
                 breakpoint:1000,

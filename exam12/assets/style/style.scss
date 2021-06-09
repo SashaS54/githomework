@@ -175,7 +175,6 @@ header {
 }
 
 .fixed {
-
     height: 60px;
     background-color: rgba(0 0 0 / 60%);
     .logo_img {
@@ -310,10 +309,21 @@ header {
                         left: -22px;
                         top: 1px;
                     }
+                    &:hover {
+                        color: #ad99fc;
+                        transition: all .3s ease-in;
+                    }
+                    &:hover::before {
+                        background-color: #ad99fc;
+                        transition: all .3s ease-in;
+                    }
                 }
                 .active {
                     &::before {
                         background-color: #fff;
+                    }
+                    &:hover::before {
+                        background-color: #ad99fc;
                     }
                 }
             }
@@ -612,10 +622,12 @@ header {
 
 .lSAction>.lSPrev {
     left: -32px;
+    top: 37%;
 }
 
 .lSAction>.lSNext{
     right: -32px;
+    top: 37%;
 }
 
 
