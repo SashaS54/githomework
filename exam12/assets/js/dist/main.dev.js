@@ -30,6 +30,7 @@ $(document).ready(function () {
     speed: 400,
     auto: true,
     pause: 10000,
+    enableTouch: false,
     onSliderLoad: function onSliderLoad() {
       $('#autoWidth').removeClass('cS-hidden');
     }
@@ -43,7 +44,6 @@ $(document).ready(function () {
     auto: true,
     pause: 10000,
     controls: false,
-    enableTouch: false,
     responsive: [{
       breakpoint: 1000,
       settings: {
