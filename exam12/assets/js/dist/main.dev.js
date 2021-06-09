@@ -61,7 +61,8 @@ $(document).ready(function () {
       breakpoint: 600,
       settings: {
         item: 1,
-        slideMove: 1
+        slideMove: 1,
+        controls: false
       }
     }],
     onSliderLoad: function onSliderLoad() {

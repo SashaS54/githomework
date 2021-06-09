@@ -69,6 +69,7 @@ $(document).ready(function() {
                 settings: {
                     item:1,
                     slideMove:1,
+                    controls:false,  
                   }
             },
         ],

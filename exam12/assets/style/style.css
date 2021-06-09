@@ -1107,6 +1107,18 @@ header {
   .slider_big .slide_element .h_subtitle {
     letter-spacing: 1px;
   }
+
+  .lSAction > .lSPrev {
+    left: -32px;
+    top: 37%;
+    display: none;
+  }
+
+  .lSAction > .lSNext {
+    right: -32px;
+    top: 37%;
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .footer .form_adress .form_adress_content {
