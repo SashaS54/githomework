@@ -4,9 +4,20 @@ let map;
 function printMap() {
     map = L.map('map').setView([40.716912222196974, -74.00593036049936], 16);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    let point = L.Icon.extend({
+        options: {
+            shadowUrl: 'map_marker_custome.png',
+            iconSize:     [171, 170],
+            iconAnchor:   [22, 94],
+            popupAnchor:  [-3, -76]
+        }
+    });
+
+    L.marker([40.716912222196974, -74.00593036049936]).addTo(map);
+
 }
 
 
