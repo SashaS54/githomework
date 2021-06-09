@@ -51,6 +51,11 @@ $(document).ready(function () {
         slideMargin: 20
       }
     }, {
+      breakpoint: 650,
+      settings: {
+        controls: false
+      }
+    }, {
       breakpoint: 600,
       settings: {
         item: 1,

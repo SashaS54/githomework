@@ -57,6 +57,12 @@ $(document).ready(function() {
                   }
             },
             {
+                breakpoint:650,
+                settings: {
+                    controls:false,  
+                }
+            },
+            {
                 breakpoint:600,
                 settings: {
                     item:1,
@@ -166,7 +172,7 @@ $(function(){
                     $('#valid_name').text('valid'); 
                     name.removeClass('error').addClass('ok');
                     $("#valid_name").addClass("green");
-                    
+
                 }else{
                     $('#valid_name').text('not valid');
                     name.addClass('error');
