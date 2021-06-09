@@ -19,7 +19,6 @@ map_link.addEventListener('click', function(){
     script.setAttribute("src", 'plagins/lafleat/leaflet.js');
     document.body.append(script);
     script.onload = printMap;
-
     map_link.remove();
     map_img.remove();
 });
@@ -48,8 +47,6 @@ $(document).ready(function() {
         speed:400,
         auto:true,
         pause:10000,
-        controls: false,
-
         responsive : [
             {
                 breakpoint:1000,
@@ -81,7 +78,7 @@ $(document).ready(function() {
    
 $(function() {
     $(window) .on('scroll' , function(){
-        console.log($(window).scrollTop());
+
         if($(window).scrollTop()>1){
             $("header") .addClass("fixed");
         }else {
@@ -114,6 +111,16 @@ $(function() {
         $("#menu_shadow").removeClass("menu_shadow_active");
     });
 
+    $("#scroll").click(function() { 
+        $('html, body').animate({
+            scrollTop: $(".what_we_do_section").offset().top  
+        }, 1000); 
+    });
+    $("#submite").click(function(){
+
+
+    })
+
 })
 
 
@@ -121,4 +128,56 @@ lightGallery(document.getElementById('lightgallery'), {
     plugins: [lgZoom, lgThumbnail],
     speed: 500,
 });
+
+
+
+
+$(function(){
+
+
+    $(function(){
+        let pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
+        let mail = $('#mail');
+        
+        mail.blur(function(){
+        if(mail.val() != ''){
+        if(mail.val().search(pattern) == 0){
+        $('#valid').text('valid');
+        $("#valid").addClass("green");
+        mail.removeClass('error').addClass('ok');
+        }else{
+        $('#valid').text('not valid');
+        mail.addClass('error');
+        }
+        }else{
+        $('#valid').text('email area is empty!');
+        mail.addClass('error');
+        }
+        });
+       });
+    
+    $(function(){
+        let pattern = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        let name = $("#name");
+    
+        name.blur(function(){
+            if(name.val() != ''){
+                if(name.val().search(pattern) == 0) {
+                    $('#valid_name').text('valid'); 
+                    name.removeClass('error').addClass('ok');
+                    $("#valid_name").addClass("green");
+                    
+                }else{
+                    $('#valid_name').text('not valid');
+                    name.addClass('error');
+                    }
+                    }else{
+                    $('#valid_name').text('email area is empty!');
+                    name.addClass('error');
+                    }
+        });
+    });
+})
+
+
 

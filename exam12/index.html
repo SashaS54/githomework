@@ -10,8 +10,27 @@
     <link rel="stylesheet" href="assets/css/hamburger.min.css">
     <link rel="stylesheet" href="assets/style/hamburger.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    
-    <title>Document</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#55b7ff">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://sashas54.github.io/githomework/Exam12/index.html">
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="assets\images\what_we_do_img_1.png">
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="assets\images\what_we_do_img_1.png">
+    <title>MONTICELLO</title>
 </head>
 <body>
     <div class="menu_shadow" id="menu_shadow"></div>
@@ -95,12 +114,12 @@
                             <span class="h_subtitle">We make the world's beautiful every day</span>
                         </li>
                     </ul>
-                    <div class="slide_down_button">
+                    <div class="slide_down_button" id="scroll">
                         <span class="slide_down"></span>
                     </div>
 
         </section>
-        <section class="what_we_do_section">
+        <section class="what_we_do_section" id="what_we_do">
             <div class="container">
                 <div class="what_we_do_section_main">
                     <h2 class="h2 h2_black">What we do</h2>
@@ -303,10 +322,12 @@
                         </ul>
                     </div>
                     <div class="form">
-                        <form method="POST" action="">
-                            <input type="text"  placeholder=" Your name">
-                            <input type="text" class="last" placeholder="Email">
-                            <div class="button_position" style="display: flex; width: 100%; justify-content: flex-end;"><button type="button" class="button">Submit</button></div>
+                        <form method="POST" action="" id="form">
+                            <span class="message" id="valid"></span>
+                            <span class="message_name"  id="valid_name"></span>
+                            <input type="text"  class="form_input" placeholder=" Your name" id="name">
+                            <input type="text" class="last form_input" placeholder="Email" id="mail">
+                            <div class="button_position" style="display: flex; width: 100%; justify-content: flex-end;"><button id="submite" type="submit" disabled class="button">Submit</button></div>
                         </form>
                     </div>
                 </div>
