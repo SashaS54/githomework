@@ -103,7 +103,10 @@ $(function () {
       scrollTop: $(".what_we_do_section").offset().top
     }, 1000);
   });
-  $("#submite").click(function () {});
+  $(".mobile_menu_body_el").click(function () {
+    $(".mobile_menu").removeClass("mobile_menu_active");
+    $("#menu_shadow").removeClass("menu_shadow_active");
+  });
 });
 lightGallery(document.getElementById('lightgallery'), {
   plugins: [lgZoom, lgThumbnail],

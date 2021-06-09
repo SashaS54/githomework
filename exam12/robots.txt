@@ -1,0 +1,5 @@
+User-agent: me
+Allow: /
+
+Sitemap: https://sashas54.github.io/githomework/Exam12/sitemap.xml
+Host:sashas54.github.io/githomework/Exam12
