@@ -43,6 +43,7 @@ $(document).ready(function () {
     auto: true,
     pause: 10000,
     controls: false,
+    enableTouch: false,
     responsive: [{
       breakpoint: 1000,
       settings: {
