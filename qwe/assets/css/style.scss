@@ -1,0 +1,41 @@
+html body {
+    width: 100%;
+    height: 100%;
+}
+
+
+main > .container {
+    padding: 60px 15px 0;
+  }
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+
+.dark_theme {
+    body {
+        background-color: #232323;
+        color: #fff;
+    }
+    footer .bg-light {
+        background-color: #000!important; 
+        .text-muted {
+            color: #efefef!important;
+        }
+    }
+    .form-controle {
+        background-color: #232323;
+    }
+}
