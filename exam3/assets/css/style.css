@@ -435,11 +435,38 @@ header .buttons .menu {
   background-color: #fff;
   margin-right: 20px;
 }
+.promo_section .scroll {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(-45deg);
+  cursor: pointer;
+  padding: 6px 10px 10px 10px;
+  z-index: 10;
+}
+.promo_section .scroll:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.promo_section .scroll span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
 
 .promo_section_content {
   color: #f7f8f3;
   text-align: right;
   padding-bottom: 330px;
+  position: relative;
+}
+.promo_section_content .discription {
+  position: relative;
 }
 .promo_section_content .discription h1 {
   font-size: 55px;
@@ -1260,7 +1287,7 @@ header .buttons .menu {
   }
 
   .abbout_us_section .slider_part {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
 
   .abbout_us_section_section_content_footer {

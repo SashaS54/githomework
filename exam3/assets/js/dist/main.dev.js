@@ -69,7 +69,8 @@ $(function () {
     $(".shadow").addClass("shadow_opened");
     $("#search_input").focus();
   });
-  $("search_submite").click(function () {
+  $("#search_submite").click(function (e) {
+    e.preventDefault();
     $(".search").removeClass("opened");
     $(".shadow").removeClass("shadow_opened");
   });
@@ -91,4 +92,11 @@ $(function () {
     $(this).toggleClass('opened');
     $($(this).attr('href')).removeClass('open');
   }); //text s viezdom===============
+  //scroll======
+
+  $(".scroll").click(function () {
+    $('html, body').animate({
+      scrollTop: $(".abbout_us_section").offset().top
+    }, 1000);
+  }); //scroll======
 });
