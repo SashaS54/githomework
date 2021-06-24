@@ -9,14 +9,40 @@ $(function(){
         }else {
             $("header") .removeClass("fixed");
         }
-        //header===================
+
 
 
 
 
 
     });
-    
+    $("#tools_menu_button").click(function(){
+        $("#tools_menu").toggleClass("opened")
+    });
+    $("main, footer").click(function(){
+        $("#tools_menu").removeClass("opened")
+    });
+
+            //header===================
+
+//mb=========================
+    $("#mobile_menu_button").click(function(){
+        $("#mobile_menu").addClass('mb_opened');
+        $(".shadow").addClass("shadow_opened");
+    })
+    $(".shadow").click(function(){
+        $("#mobile_menu").removeClass('mb_opened');
+        $(".shadow ").removeClass('shadow_opened');
+    })
+    $("#mobile_menu_in_mb").click(function(){
+        $("#mobile_menu").removeClass("mb_opened")
+        $(".shadow").removeClass("shadow_opened");
+    })
+
+
+//mb=========================
+
+
         //tabs======================
 
         $(".tab_btn").click(function(e){
@@ -40,8 +66,27 @@ $(function(){
     //slider==========================
     $('#prdocuts_slider').lightSlider({
         item:3,
-        slideMargin:40,
+        slideMargin:20,
         loop:true,
+        slideMove:1,
+        responsive : [
+            {
+                breakpoint:850,
+                settings: {
+                    item:2,
+
+
+                  }
+            },
+            {
+                breakpoint:500,
+                settings: {
+                    item:1,
+
+
+                  }
+            },
+        ],
     });
 
     $('#coments_slider').lightSlider({
@@ -62,6 +107,29 @@ $(function(){
 
 
     //slider================
+
+
+
+    //search==============
+
+    $("#search").click(function(){
+        $(".search").addClass("opened");
+        $(".shadow").addClass("shadow_opened");
+        $("#search_input").focus();
+    })
+
+    $("search_submite").click(function(){
+        $(".search").removeClass("opened");
+        $(".shadow").removeClass("shadow_opened");
+    })
+
+    $(".shadow").click(function(){
+        $(".search").removeClass("opened");
+    })
+
+
+
+    //search==============
 
     //ppus=======
 

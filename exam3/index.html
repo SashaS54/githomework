@@ -11,8 +11,39 @@
     <title>Document</title>
 </head>
 <body>
+
+
+<div class="search">
+    <form>
+        <label>
+            <input type="text" id="search_input" placeholder="Enter product name">
+            <button type="submit" id="search_submite">Search</button>
+        </label>
+    </form>
+</div>
+
+<div class="shadow">
+
+</div>
+<div class="mobile_menu" id="mobile_menu">
+
+    <div class="mobile_menu_header">
+        <div  class="mobile_menu_button "><button type="button" id="mobile_menu_in_mb">MENU</button></div>
+       
+    </div>
+    <div class="container">
+        <ul class="mobile_menu_body">
+            <li class="mobile_menu_body_el"><a href="#">Home</a></li>
+            <li class="mobile_menu_body_el"><a href="#">Products</a></li>
+            <li class="mobile_menu_body_el"><a href="#">FAQS</a></li>
+            <li class="mobile_menu_body_el"><a href="#">Contact us</a></li>
+        </ul>
+     </div>  
+</div>  
+
     <header>
         <ul class="links">
+            <li  class="mobile_menu_button "><button type="button" id="mobile_menu_button">MENU</button></li>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#" class="active">Products</a></li>
             <li><a href="#" class="active">FAQS</a></li>
@@ -21,10 +52,11 @@
         <div class="logo">
             CBD
         </div>
-        <ul class="buttons">
+        <ul class="buttons" id="tools_menu">            
+            <li class="button menu" aria-colspan=""><button class="btn" type="button" id="tools_menu_button">tools</button></li>
             <li class="button"><button class="btn" type="button" id="login">Login</button></li>
             <li class="button"><button class="btn" type="button" id="search"><img src="assets/images/svg/search_icon.svg" alt="">search</button></li>
-            <li class="button"><button class="btn" type="button" id="cart">cart <span id="cart_items">( 0 )</span></button></li>
+            <li class="button"><button class="btn" type="button" id="cart">cart <span id="cart_items">(0)</span></button></li>
         </ul>
     </header>
     <main>
@@ -121,12 +153,12 @@
                             </div>
                         </div>
                     </div>
-
+                    <h2 class="h2">CBD Featured Products</h2>
 
                 </div>
             </div>
             <div class="slider_part">
-                <h2 class="h2">CBD Featured Products</h2>
+
                 <ul class="slider" id="prdocuts_slider">
 
                     <li class="slid_el">
@@ -274,78 +306,96 @@
                     <h2 class="h2">frequently asked questions</h2>
 
                         <ul class="asks">
-                            <li >
+                            <li>
                                 <div  class="name" id="block1">
-                                    <a href="#block1" class="circle-plus closed">
-                                        <div class="circle">
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
+                                    <div class="row">
+                                        <div class="plus">
+                                            <a href="#block1" class="circle-plus closed">
+                                                <div class="circle">
+                                                    <div class="horizontal"></div>
+                                                    <div class="vertical"></div>
+                                                </div>
+                                                <div class="circle-plus-two closed">
+                                        
+                                                    <div class="horizontal"></div>
+                                                    <div class="vertical"></div>
+                                                
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                    <div class="circle-plus-two closed">
-                                    
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
-                                    
+                                        <span class="text">What is Cannabidiol (CBD)? </span>
                                     </div>
-                                    <span class="text">What is Cannabidiol (CBD)? </span>
+                                        
                                     <div class="hidden_text">Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States. </div>
                                 </div>
                                
                             </li>
                             <li > 
                                 <div class="name" id="block2">
-                                    <a href="#block2" class="circle-plus closed">
-                                        <div class="circle">
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
+                                    <div class="row">
+                                        <div class="plus">
+                                            <a href="#block2" class="circle-plus closed">
+
+                                                <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="circle-plus-two closed">
+                                            
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            
+                                            </a>
                                         </div>
-                                    </a>
-                                    <a href="#" class="circle-plus-two closed">
-                                    
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
-                                    
-                                    </a>
-                                    <span class="text">Is Hemp-Derived Cannabidiol (CBD) Legal?  </span>
+                                        <span class="text">Is Hemp-Derived Cannabidiol (CBD) Legal?  </span>
+                                    </div>
                                     <div class="hidden_text">Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States. </div>
                                 </div>
                                
                             </li>
                             <li >
                                 <div class="name" id="block3">
-                                    <a href="#block3" class="circle-plus closed">
-                                        <div class="circle">
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
+                                    <div class="row">
+                                        <div class="plus">
+                                            <a href="#block3" class="circle-plus closed">
+                                                <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                                </div>
+                                            </a>
+                                            <div class="circle-plus-two closed">
+                                            
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            
+                                            </div>
                                         </div>
-                                    </a>
-                                    <div class="circle-plus-two closed">
-                                    
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
-                                    
+                                        <span class="text">Are there any negative side effects?  </span>
                                     </div>
-                                    <span class="text">Are there any negative side effects?  </span>
                                     <div class="hidden_text">Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States. </div>
                                 </div>
                                 
                             </li>
                             <li >
                                 <div class="name" id="block4" >
-                                    <a href="#block4" class="circle-plus closed">
-                                        <div class="circle">
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
+                                    <div class="row">
+                                        <div class="plus">
+                                            <a href="#block4" class="circle-plus closed">
+                                                <div class="circle">
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                                </div>
+                                            </a>
+                                            <div class="circle-plus-two closed">
+                                            
+                                                <div class="horizontal"></div>
+                                                <div class="vertical"></div>
+                                            
+                                            </div>
                                         </div>
-                                    </a>
-                                    <div class="circle-plus-two closed">
-                                    
-                                        <div class="horizontal"></div>
-                                        <div class="vertical"></div>
-                                    
+                                        <span class="text"> Do you offer a return policy?</span>
                                     </div>
-                                    <span class="text"> Do you offer a return policy?</span>
                                     <div class="hidden_text">Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States. </div>
                                 </div>
                                
