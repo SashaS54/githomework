@@ -46,6 +46,9 @@ $(function () {
     slideMargin: 20,
     loop: true,
     slideMove: 1,
+    speed: 400,
+    auto: true,
+    pause: 5000,
     responsive: [{
       breakpoint: 850,
       settings: {
@@ -60,7 +63,10 @@ $(function () {
   });
   $('#coments_slider').lightSlider({
     item: 1,
-    loop: true
+    loop: true,
+    speed: 1400,
+    auto: true,
+    pause: 5000
   }); //slider================
   //search==============
 
@@ -99,4 +105,37 @@ $(function () {
       scrollTop: $(".abbout_us_section").offset().top
     }, 1000);
   }); //scroll======
-});
+  //
+
+  $(function (e) {
+    $("#submite").preventDefault();
+  });
+  $();
+  $("#email").keyup(function () {
+    if (validateEmail()) {
+      $("#email").removeClass("notvalid");
+      $("#email").addClass("valid");
+    } else {
+      $("#email").addClass("notvalid");
+      $("#submite").attr("disabled");
+    }
+
+    buttonState();
+  });
+}); //
+
+function buttonState() {
+  if (validateEmail()) {} else {}
+} //
+
+
+function validateEmail() {
+  var email = $("#email").val();
+  var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+  if (reg.test(email)) {
+    return true;
+  } else {
+    return false;
+  }
+}

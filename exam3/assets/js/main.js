@@ -69,6 +69,9 @@ $(function(){
         slideMargin:20,
         loop:true,
         slideMove:1,
+        speed:400,
+        auto:true,
+        pause:5000,
         responsive : [
             {
                 breakpoint:850,
@@ -92,6 +95,9 @@ $(function(){
     $('#coments_slider').lightSlider({
         item:1,
         loop:true,
+        speed:1400,
+        auto:true,
+        pause:5000,
     });
 
 
@@ -160,6 +166,9 @@ $(function(){
 
       //scroll======
 
+
+      
+
       $(".scroll").click(function() { 
         $('html, body').animate({
             scrollTop: $(".abbout_us_section").offset().top  
@@ -168,5 +177,44 @@ $(function(){
       //scroll======
 
 
-})
+      //
+      $(function(e){
+          $("#submite").preventDefault();
+      })
+
+      $()
+
+		$("#email").keyup(function(){
+			if(validateEmail()){
+                $("#email").removeClass("notvalid")
+                $("#email").addClass("valid") 
+			}else{
+                $("#email").addClass("notvalid") 
+                $("#submite").attr("disabled")
+			}
+			buttonState();
+		});
+	});
+//
+	function buttonState(){
+		if(validateEmail()){
+
+		}else{
+
+		}
+	}
+//
+	function validateEmail(){
+
+		let email=$("#email").val();
+
+		 let reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		 if(reg.test(email)){
+		 	return true;
+		 }else{
+		 	return false;
+		 }
+
+	}
+
 

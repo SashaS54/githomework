@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://sashas54.github.io/githomework/exam3/
